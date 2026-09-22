@@ -143,3 +143,5 @@ MIT — Built with professional engineering standards.
 ---
 
 *Project: Smart Store Page | Framework: Next.js 16 | Status: Active Development*
+<a href="docs/env-variables.md" style="display:inline-block;padding:10px 24px;background:linear-gradient(135deg,#0ea5e9,#d946ef);color:#fff;border-radius:12px;text-decoration:none;font-weight:600;box-shadow:0 4px 15px rgba(14,165,233,0.3);">📄 Environment Variables Docs</a>
+<a href=".env.example" style="display:inline-block;padding:10px 24px;background:linear-gradient(135deg,#d4af37,#b8860b);color:#fff;border-radius:12px;text-decoration:none;font-weight:600;box-shadow:0 4px 15px rgba(212,175,55,0.3);margin-left:8px;">📋 .env Example</a>
