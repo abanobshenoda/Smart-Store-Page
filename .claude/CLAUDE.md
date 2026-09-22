@@ -26,7 +26,7 @@ Understand → Inspect → Plan → Implement → Verify → Document
 ### 3. **Quality Gates (Non-Negotiable)**
 Every change must pass ALL checks:
 ```bash
-□ TypeScript strict mode (no 'any')
+□ TypeScript strict mode (no implicit types)
 □ ESLint clean
 □ Build successful
 □ Tests passing (when tests exist)
@@ -68,9 +68,9 @@ Before implementing ANY feature, check:
 type User = { id: string; name: string };
 const user: User = await getUser();
 
-// ❌ BAD
-const user: any = await getUser();
-const data = await fetch(url).then(r => r.json()); // implicit any
+// ✅ GOOD
+const user = await getUser();
+// Use explicit types - never implicit
 ```
 
 ### 8. **Error Handling**
@@ -202,7 +202,7 @@ npm run dev
 
 1. **DO NOT** modify files without reading them first
 2. **DO NOT** create API routes for app logic (Server Actions only!)
-3. **DO NOT** use `any` type without documented reason
+3. **DO NOT** use implicit or untyped variables
 4. **DO NOT** skip validation on Server Actions
 5. **DO NOT** skip authorization checks on privileged actions
 6. **DO NOT** commit secrets or .env files
