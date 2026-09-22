@@ -69,6 +69,30 @@ smart-store-page-new/
 
 ---
 
+## 💡 System Features & Advantages
+
+### User-Facing Features
+- **Seamless Shopping Experience** — Intuitive navigation with shadcn/ui components (Button, Card, Dialog, Sheet, Carousel)
+- **Interactive Product Showcase** — 3D visuals via Three.js / React Three Fiber for engaging product displays
+- **Smart Cart Management** — Zustand-powered state with real-time updates and persistent session data
+- **Responsive Checkout Flow** — Mobile-optimized forms with React Hook Form + Zod validation
+- **Arabic RTL Support** — Complete right-to-left layout for Arabic-speaking users
+- **Fast Animations** — Framer Motion + GSAP for smooth 60fps transitions under 300ms
+
+### Technical Advantages
+- **Enterprise-Grade Architecture** — Server Actions ONLY (`"use server"`), no client-side fetch for mutations
+- **TypeScript Strict Mode** — Explicit types only; zero `any` usage; full type safety
+- **Robust Security Stack** — NextAuth session auth, authorization checks on every privileged action, bcryptjs hashing
+- **Database Integrity** — Drizzle ORM eliminates SQL injection risk; PostgreSQL backend
+- **Component Separation** — Page-specific components (`components/pages/`) kept separate from shared (`components/sharedComponents/`) for maintainability
+- **Branch-Based Workflow** — Every feature: branch → test → approval → merge (no direct pushes)
+- **No Unapproved Dependencies** — `package.json` changes require your explicit approval; shadcn/ui only for UI
+- **Performance Optimized** — Lazy loading, optimized images (Next.js Image), minimized bundle, cached operations
+- **Accessibility Compliant** — WCAG 2.1 AA via shadcn/ui components with ARIA attributes
+- **Animation Alternatives** — Reduced-motion support for accessibility preferences
+
+---
+
 ## 🏗 Architecture Principles
 
 - **Server Actions ONLY** (`"use server"`) for backend logic
