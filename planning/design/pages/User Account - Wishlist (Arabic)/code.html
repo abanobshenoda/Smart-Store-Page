@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>المفضلة - Luxury Soles</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..900&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#39b8fd",
+                      "surface-container-high": "#eae7e7",
+                      "surface-bright": "#fcf9f8",
+                      "outline-variant": "#d0c5af",
+                      "on-surface-variant": "#4d4635",
+                      "surface-container-low": "#f6f3f2",
+                      "on-primary-fixed": "#241a00",
+                      "on-surface": "#1c1b1b",
+                      "secondary-fixed": "#c9e6ff",
+                      "surface-container-highest": "#e5e2e1",
+                      "primary-container": "#d4af37",
+                      "on-secondary": "#ffffff",
+                      "primary-fixed": "#ffe088",
+                      "on-tertiary-fixed-variant": "#7c008e",
+                      "surface-tint": "#735c00",
+                      "on-background": "#1c1b1b",
+                      "on-error": "#ffffff",
+                      "gold-glow": "rgba(212, 175, 55, 0.4)",
+                      "secondary": "#006591",
+                      "on-primary-fixed-variant": "#574500",
+                      "on-error-container": "#93000a",
+                      "on-secondary-container": "#004666",
+                      "tertiary-container": "#f58bff",
+                      "outline": "#7f7663",
+                      "on-primary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "inverse-primary": "#e9c349",
+                      "surface": "#fcf9f8",
+                      "royal-blue": "#18509F",
+                      "tertiary": "#a200ba",
+                      "tertiary-fixed-dim": "#fbabff",
+                      "secondary-fixed-dim": "#89ceff",
+                      "tertiary-fixed": "#ffd6fd",
+                      "primary": "#735c00",
+                      "surface-container": "#f0eded",
+                      "surface-dim": "#dcd9d9",
+                      "on-secondary-fixed": "#001e2f",
+                      "inverse-on-surface": "#f3f0ef",
+                      "on-secondary-fixed-variant": "#004c6e",
+                      "primary-fixed-dim": "#e9c349",
+                      "background": "#fcf9f8",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed": "#36003e",
+                      "surface-variant": "#e5e2e1",
+                      "on-primary-container": "#554300",
+                      "on-tertiary-container": "#79008b",
+                      "surface-white": "#FFFFFF",
+                      "error": "#ba1a1a",
+                      "inverse-surface": "#313030",
+                      "on-tertiary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "unit": "4px",
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Bodoni Moda"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-md": [
+                              "Bodoni Moda"
+                      ],
+                      "headline-sm": [
+                              "Bodoni Moda"
+                      ],
+                      "label-caps": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg-mobile": [
+                              "Bodoni Moda"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .gold-button {
+            background-color: #d4af37;
+            color: #ffffff;
+            box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+        .gold-button:hover {
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4), inset 0 0 15px rgba(255,255,255,0.3);
+            transform: scale(1.02);
+        }
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(115, 92, 0, 0.1);
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-lg min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface-white/80 dark:bg-surface-dim/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm">
+<div class="flex flex-row-reverse justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto rtl">
+<a class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-opacity" href="#">
+                Luxury Soles
+            </a>
+<div class="hidden md:flex gap-8 items-center" dir="rtl">
+<div class="relative group">
+<input class="bg-surface-container-low border-outline-variant rounded-lg px-4 py-2 text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary/50 outline-none w-64 transition-all" placeholder="البحث عن منتجات..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant group-focus-within:text-secondary">search</span>
+</div>
+</div>
+<div class="flex gap-4 items-center flex-row-reverse">
+<button class="text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 scale-95 duration-200 ease-in-out">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_cart</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300 scale-95 duration-200 ease-in-out">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">person</span>
+</button>
+<button class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary transition-colors duration-300 scale-95 duration-200 ease-in-out pb-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Header Section -->
+<div class="flex justify-between items-end mb-12 border-b border-outline-variant/30 pb-4">
+<div>
+<h1 class="font-display-lg md:text-display-lg text-display-lg-mobile text-on-surface mb-2">المفضلة</h1>
+<p class="font-body-md text-on-surface-variant">5 منتجات محفوظة</p>
+</div>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-error transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">delete_sweep</span>
+                مسح الكل
+            </button>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter" id="wishlist-grid">
+<!-- Card 1 -->
+<div class="product-card bg-surface-white rounded-full p-4 relative flex flex-col h-full border border-surface-container-high">
+<button class="absolute top-4 left-4 z-10 w-8 h-8 flex items-center justify-center bg-surface-white/80 backdrop-blur-sm rounded-full text-on-surface-variant hover:text-error hover:bg-error-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+<div class="aspect-square w-full bg-surface-container-low rounded-lg mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A premium 3D rendering of a luxury men's leather oxford shoe in deep rich brown. The shoe is presented on a minimalist white pedestal with soft ambient studio lighting creating a subtle glow. The background is a clean, pure white to emphasize the product's high-fashion, high-quality craftsmanship and sharp details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI1NRhpalNEINV9rJqVh9Lzzhd02oImz7M2OSZvVV5U4xuqzVyD-U9FTfJkdL8qj33mkIPUVkX_Czj5Y3YWnXOY6hiis5Q8FtHmCSppsnDmAkiRjdyc2SKdyeZx7K8t48_26Nnn7B5691oPsD87kc7hcWVMuJ88XdqAI7HWMN-pAXXqqbwQ8B5UtsKDR-qp4MrIH2hzSnoIYfY6gk4ZpLpCcwWpnbGErdR4HPjxw-bzt6zxIos8pKC5g"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<span class="inline-block bg-surface-container px-2 py-1 rounded text-xs font-label-caps text-on-surface-variant mb-2">رسمي</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1 truncate">حذاء أكسفورد كلاسيكي</h3>
+<p class="font-body-md text-on-surface-variant mb-4">جلد طبيعي 100%</p>
+</div>
+<div class="flex justify-between items-center mt-auto pt-4 border-t border-surface-container-high">
+<span class="font-headline-sm text-lg text-primary">1,250 ج.م</span>
+<button class="gold-button font-label-caps text-label-caps px-4 py-2 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+                            أضف للسلة
+                        </button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="product-card bg-surface-white rounded-full p-4 relative flex flex-col h-full border border-surface-container-high">
+<button class="absolute top-4 left-4 z-10 w-8 h-8 flex items-center justify-center bg-surface-white/80 backdrop-blur-sm rounded-full text-on-surface-variant hover:text-error hover:bg-error-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+<div class="aspect-square w-full bg-surface-container-low rounded-lg mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A sleek, modern designer sneaker in pristine white with subtle metallic gold accents. It sits on a smooth glass surface reflecting soft, diffused studio light. The overall aesthetic is premium minimalism, bright and airy, perfect for a high-end luxury e-commerce platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn_Qp7Ywtkcrjhn4CnrDoD3BEAxyBa5YoGDDxR4Z7uyG4pQvqTRpEIiVWvd1MPRaFcCujjPYD_wfnjs0Et0RnhlrdpMfFgV1aSBH30h0KNrW6_baUPIe5n-TYz3hmVyZBy1nnHSIioOQfhQUugK60U8oUbQdP2G8cnXZS8ynFAV9IYMIV8md0efkhKYElhsL6qG2-v3-Fcxpzv1XdglIsMMXCu0UU-Ifqxv8URjzEt759dBraWUFzL1g"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<span class="inline-block bg-surface-container px-2 py-1 rounded text-xs font-label-caps text-on-surface-variant mb-2">كاجوال</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1 truncate">سنيكرز أوربان الأبيض</h3>
+<p class="font-body-md text-on-surface-variant mb-4">تصميم عصري مريح</p>
+</div>
+<div class="flex justify-between items-center mt-auto pt-4 border-t border-surface-container-high">
+<span class="font-headline-sm text-lg text-primary">850 ج.م</span>
+<button class="gold-button font-label-caps text-label-caps px-4 py-2 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+                            أضف للسلة
+                        </button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="product-card bg-surface-white rounded-full p-4 relative flex flex-col h-full border border-surface-container-high">
+<button class="absolute top-4 left-4 z-10 w-8 h-8 flex items-center justify-center bg-surface-white/80 backdrop-blur-sm rounded-full text-on-surface-variant hover:text-error hover:bg-error-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+<div class="aspect-square w-full bg-surface-container-low rounded-lg mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="An elegant black suede loafer with a gold horsebit detail, showcased against a bright, luxurious white marble background. The lighting is crisp and highlights the texture of the suede and the gleam of the metal. The composition is centered, breathing high fashion and premium quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfx8wQyZm7NECKzxBg2WxXP6nB2ZrAGRbN-Mv29MIJJwdoLCT1lm1TQXeDY8PVMBQNgKIek2EOBiWzd8w1Y-dEENR85mhtoIkmhTWLv0vQjcf8xxumHto11k2G_hib-GXvCieKKWCKJMp92h_oBLkPYBNmfHlOHM24d8nPB7IRswDekStNxi3lFv-YqcsVNXCguhbNZisEVtwlfOkmbTfckL7q-JzexHaweFtQgjPhP5wg1kinuY9q1A"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<span class="inline-block bg-surface-container px-2 py-1 rounded text-xs font-label-caps text-on-surface-variant mb-2">سمارت كاجوال</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1 truncate">لوفر شمواه أسود</h3>
+<p class="font-body-md text-on-surface-variant mb-4">لمسة ذهبية أنيقة</p>
+</div>
+<div class="flex justify-between items-center mt-auto pt-4 border-t border-surface-container-high">
+<span class="font-headline-sm text-lg text-primary">950 ج.م</span>
+<button class="gold-button font-label-caps text-label-caps px-4 py-2 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+                            أضف للسلة
+                        </button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="product-card bg-surface-white rounded-full p-4 relative flex flex-col h-full border border-surface-container-high">
+<button class="absolute top-4 left-4 z-10 w-8 h-8 flex items-center justify-center bg-surface-white/80 backdrop-blur-sm rounded-full text-on-surface-variant hover:text-error hover:bg-error-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+<div class="aspect-square w-full bg-surface-container-low rounded-lg mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A sophisticated women's stiletto heel in deep burgundy leather. The heel is sharp and elegant. It is positioned on a slightly reflective, clean white surface, illuminated by high-key lighting that creates soft dimensional shadows. The image exudes a luxury, boutique showroom feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0tcMRvTG1aB4Ko7yhkT7aSCD5SU2aKBCLlqh51FI-XSWofepMe00fiNzKHVfX9ZHlUtNFsi5Dn5HFebIXNt--zhKFYu2z1COzdeAZGYYcktK5d-J4umMrCfxudESCR01xTS12NOoqPhPLOIw6b_mQUu3PmdP4q0DD2wolFPVDKomaJnycy_r5bHNfDHR2gScXchUSSDT-P4rO3u9Qf0Z4x5jVojidDo8iHTlt2Eni2g5zAkFIHG-ERw"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<span class="inline-block bg-surface-container px-2 py-1 rounded text-xs font-label-caps text-on-surface-variant mb-2">سهرة</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1 truncate">حذاء كعب عالي عنابي</h3>
+<p class="font-body-md text-on-surface-variant mb-4">جلد فاخر</p>
+</div>
+<div class="flex justify-between items-center mt-auto pt-4 border-t border-surface-container-high">
+<span class="font-headline-sm text-lg text-primary">1,400 ج.م</span>
+<button class="gold-button font-label-caps text-label-caps px-4 py-2 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+                            أضف للسلة
+                        </button>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="product-card bg-surface-white rounded-full p-4 relative flex flex-col h-full border border-surface-container-high">
+<button class="absolute top-4 left-4 z-10 w-8 h-8 flex items-center justify-center bg-surface-white/80 backdrop-blur-sm rounded-full text-on-surface-variant hover:text-error hover:bg-error-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+<div class="aspect-square w-full bg-surface-container-low rounded-lg mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A premium men's Chelsea boot in rich tan leather, featuring elastic side panels. The boot is displayed against a bright, airy studio backdrop with subtle warm lighting that highlights the leather's natural grain. The setting is minimal, reflecting a high-end, smart e-commerce aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAovp9A3ilKY7x6oe7gP8cQpDwv3QQSezT9hjSmFBd7frkc4KzyiYBEkSH8WputqD7fPe1FHxoUVJmJym3FBFoLut-l_0y7a0lkrIJE6wsV4BMFEEr94NUvgK1Wx3lyAeexkAf0FuMPb8kmZeCj2PVa4T1dhHmERAKO4zP8pD06aqWFhLv7cF1E0hXGvQ-tr80lssm1P--XdUP8sv7tvXxTRdr6-7C1j6DVNQFv2exqiV_bdQrpW8GYJA"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<span class="inline-block bg-surface-container px-2 py-1 rounded text-xs font-label-caps text-on-surface-variant mb-2">شتوي</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1 truncate">بوت تشيلسي كلاسيك</h3>
+<p class="font-body-md text-on-surface-variant mb-4">أناقة الشتاء</p>
+</div>
+<div class="flex justify-between items-center mt-auto pt-4 border-t border-surface-container-high">
+<span class="font-headline-sm text-lg text-primary">1,100 ج.م</span>
+<button class="gold-button font-label-caps text-label-caps px-4 py-2 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+                            أضف للسلة
+                        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State (Hidden by default for this example, could be toggled via JS) -->
+<div class="hidden flex-col items-center justify-center py-24 text-center" id="empty-state">
+<div class="w-24 h-24 bg-surface-container rounded-full flex items-center justify-center mb-6 shadow-sm border border-outline-variant/20">
+<span class="material-symbols-outlined text-5xl text-outline-variant" style="font-variation-settings: 'FILL' 0;">heart_broken</span>
+</div>
+<h2 class="font-display-lg text-headline-md text-on-surface mb-4">المفضلة فارغة</h2>
+<p class="font-body-lg text-on-surface-variant max-w-md mx-auto mb-8">لم تقم بإضافة أي منتجات إلى قائمة المفضلة الخاصة بك حتى الآن. اكتشف تشكيلتنا الفاخرة.</p>
+<a class="gold-button font-label-caps text-label-caps px-8 py-4 rounded-lg inline-flex items-center gap-2" href="#">
+<span class="material-symbols-outlined">explore</span>
+                تسوق الآن
+            </a>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-16 w-full max-w-container-max mx-auto rtl border-t border-outline-variant/20">
+<div class="col-span-1 md:col-span-1 mb-8 md:mb-0">
+<div class="font-display-lg text-headline-md text-primary dark:text-primary-fixed mb-4">
+                Luxury Soles
+             </div>
+<p class="font-body-md text-on-surface-variant mb-6 text-sm">
+                 \u00a9 2024 Luxury Soles. All Rights Reserved. Crafted in Egypt.
+             </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-on-surface dark:text-surface-bright mb-6 uppercase tracking-wider">الشركة</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary dark:hover:text-primary-fixed underline decoration-primary decoration-1 underline-offset-4 transition-all" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary dark:hover:text-primary-fixed underline decoration-primary decoration-1 underline-offset-4 transition-all" href="#">Sustainability</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-on-surface dark:text-surface-bright mb-6 uppercase tracking-wider">التسوق</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary dark:hover:text-primary-fixed underline decoration-primary decoration-1 underline-offset-4 transition-all" href="#">Collections</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary dark:hover:text-primary-fixed underline decoration-primary decoration-1 underline-offset-4 transition-all" href="#">Store Locator</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-on-surface dark:text-surface-bright mb-6 uppercase tracking-wider">الدعم</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary dark:hover:text-primary-fixed underline decoration-primary decoration-1 underline-offset-4 transition-all" href="#">Shipping &amp; Returns</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary dark:hover:text-primary-fixed underline decoration-primary decoration-1 underline-offset-4 transition-all" href="#">Contact Support</a></li>
+</ul>
+</div>
+</footer>
+<script>
+        // Simple script to demonstrate empty state toggle if all items were deleted
+        document.querySelectorAll('.product-card .absolute').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const card = this.closest('.product-card');
+                card.style.opacity = '0';
+                card.style.transform = 'scale(0.9)';
+                setTimeout(() => {
+                    card.remove();
+                    checkEmptyState();
+                }, 300);
+            });
+        });
+
+        document.querySelector('button:has(.material-symbols-outlined:contains("delete_sweep"))')?.addEventListener('click', () => {
+            const grid = document.getElementById('wishlist-grid');
+            grid.innerHTML = '';
+            checkEmptyState();
+        });
+
+        function checkEmptyState() {
+            const grid = document.getElementById('wishlist-grid');
+            const emptyState = document.getElementById('empty-state');
+            const headerInfo = document.querySelector('.flex.justify-between.items-end.mb-12');
+            
+            if (grid && grid.children.length === 0) {
+                grid.classList.add('hidden');
+                emptyState.classList.remove('hidden');
+                emptyState.classList.add('flex');
+                if(headerInfo) headerInfo.classList.add('hidden');
+            }
+        }
+    </script>
+</body></html>

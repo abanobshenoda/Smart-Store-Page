@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تسجيل الدخول - Smart Store</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#554300",
+                        "surface-variant": "#e5e2e1",
+                        "background": "#fcf9f8",
+                        "on-tertiary-fixed-variant": "#7c008e",
+                        "on-surface-variant": "#4d4635",
+                        "on-primary-fixed-variant": "#574500",
+                        "surface-container": "#f0eded",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#d4af37",
+                        "secondary": "#006591",
+                        "inverse-primary": "#e9c349",
+                        "on-secondary-fixed": "#001e2f",
+                        "surface-tint": "#735c00",
+                        "secondary-fixed": "#c9e6ff",
+                        "tertiary-fixed-dim": "#fbabff",
+                        "surface": "#fcf9f8",
+                        "on-secondary-fixed-variant": "#004c6e",
+                        "on-background": "#1c1b1b",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-secondary-container": "#004666",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-tertiary-container": "#79008b",
+                        "surface-container-highest": "#e5e2e1",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffd6fd",
+                        "tertiary-container": "#f58bff",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "surface-container-low": "#f6f3f2",
+                        "inverse-surface": "#313030",
+                        "outline-variant": "#d0c5af",
+                        "on-error-container": "#93000a",
+                        "primary": "#735c00",
+                        "on-tertiary-fixed": "#36003e",
+                        "surface-white": "#FFFFFF",
+                        "on-surface": "#1c1b1b",
+                        "secondary-fixed-dim": "#89ceff",
+                        "surface-container-high": "#eae7e7",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#241a00",
+                        "gold-glow": "rgba(212, 175, 55, 0.4)",
+                        "secondary-container": "#39b8fd",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#ffe088",
+                        "royal-blue": "#18509F",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary": "#ffffff",
+                        "outline": "#7f7663",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#a200ba"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "unit": "4px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Bodoni Moda"],
+                        "headline-md": ["Bodoni Moda"],
+                        "headline-sm": ["Bodoni Moda"],
+                        "display-lg": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .input-glow:focus {
+            box-shadow: 0 0 0 2px theme('colors.secondary'), 0 0 10px theme('colors.secondary-fixed');
+            border-color: theme('colors.secondary');
+        }
+        .btn-gold-glow:hover {
+            box-shadow: 0 4px 15px theme('colors.gold-glow');
+            transform: translateY(-1px);
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(2deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .bg-gradient-procedural {
+            background: linear-gradient(135deg, #001e2f 0%, #18509F 50%, #79008b 100%);
+            background-size: 200% 200%;
+            animation: gradientMove 15s ease infinite;
+        }
+        
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex items-center justify-center font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<div class="w-full min-h-screen flex flex-col md:flex-row">
+<!-- RIGHT COLUMN (Form) -->
+<div class="w-full md:w-1/2 lg:w-5/12 xl:w-1/3 flex flex-col justify-center px-8 md:px-12 lg:px-16 py-12 bg-surface-container-lowest z-10 shadow-2xl md:shadow-none">
+<div class="mb-10 flex justify-center md:justify-start">
+<img alt="Smart Store Logo" class="h-16 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W0330-yVW2yG6p766_4un76qpxiCyYUwFNn6uPx0vYquXWNFAiWpWg778OC6r9-aCZ7AEZHUWaVb9EUZg3-0P-2QUvmitlNZE39qf4MS2p7Df0I9OmvqFo39aqz0H1MgiiOAlOQmlHsQ-IAzvJrmZlPt43RkDo1V01QKmeSCzfbjRj4PesrvniMM-_JJqIDPOqLC8LUnHH1M9uzilBXhWZiKblJnYczJq-M3sWD3v0PYNoosyEKuTTrXzY"/>
+</div>
+<div class="mb-8 text-center md:text-right">
+<h1 class="font-headline-md text-headline-md text-on-background mb-2">مرحباً بعودتك</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">الرجاء إدخال بياناتك للمتابعة.</p>
+</div>
+<form class="space-y-6">
+<!-- Email -->
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2" for="email">البريد الإلكتروني</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline">mail</span>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-lg py-3 pr-10 pl-4 text-on-surface placeholder:text-outline focus:outline-none input-glow transition-all duration-300 font-body-md" id="email" placeholder="name@example.com" type="email"/>
+</div>
+</div>
+<!-- Password -->
+<div>
+<div class="flex justify-between items-center mb-2">
+<label class="block font-label-caps text-label-caps text-on-surface" for="password">كلمة المرور</label>
+<a class="font-label-caps text-label-caps text-primary hover:text-primary-container transition-colors" href="#">هل نسيت كلمة المرور؟</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline">lock</span>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-lg py-3 pr-10 pl-12 text-on-surface placeholder:text-outline focus:outline-none input-glow transition-all duration-300 font-body-md" id="password" placeholder="••••••••" type="password"/>
+<button class="absolute left-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface transition-colors focus:outline-none" type="button">
+<span class="material-symbols-outlined text-xl">visibility_off</span>
+</button>
+</div>
+</div>
+<!-- Remember Me -->
+<div class="flex items-center">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary-container bg-surface-container-low cursor-pointer" id="remember" type="checkbox"/>
+<label class="mr-2 font-body-md text-sm text-on-surface-variant cursor-pointer" for="remember">تذكرني</label>
+</div>
+<!-- Submit -->
+<button class="w-full bg-primary-container text-on-primary-container font-label-caps text-label-caps py-4 rounded-full btn-gold-glow transition-all duration-300 relative overflow-hidden group" type="submit">
+<span class="relative z-10 flex items-center justify-center gap-2">
+                        تسجيل الدخول
+                        <span class="material-symbols-outlined text-lg">arrow_back</span>
+</span>
+<div class="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+</button>
+</form>
+<div class="mt-8">
+<div class="relative">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="px-2 bg-surface-container-lowest text-on-surface-variant font-body-md">أو المتابعة باستخدام</span>
+</div>
+</div>
+<div class="mt-6 grid grid-cols-2 gap-4">
+<button class="flex justify-center items-center py-2.5 border border-outline-variant rounded-lg hover:bg-surface-container-low transition-colors duration-200">
+<img alt="Google" class="h-5 w-5 ml-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkkabCLyzbky01uJy4nCUwDI1AO64Ig5dLz6iKCFtpkjoCC86qO99L5yNfCT3HmlimTyeF3TZiJ1c4DB4Ln4TblJb2lRtHJpXU6z3qFmzXjpjHIBSf83UyrbGKGe2oExc3h0fIKPyOn3LsQrvk3AkTY5KGas6N_FUPrWSTGR6lYC6VNPxrWItC3JdrFWMsLsu_XNglF6rLYcV-_q3zaIug2b13JZhvXDMBULLagobffJf8VWgZKvlgeg"/>
+<span class="font-body-md text-sm text-on-surface">Google</span>
+</button>
+<button class="flex justify-center items-center py-2.5 border border-outline-variant rounded-lg hover:bg-surface-container-low transition-colors duration-200">
+<img alt="Facebook" class="h-5 w-5 ml-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBblrKm_RNuCHXkK03yjwBBu6gaXgXkGajhiNLgcpB5ehaoBILNUYBE4rklyr5YezaTrJ80EKB1gqMtVVOmMsDayvcxjgrY6GybGt1KoFtwoREiYeDJzelmowXnYxDiNrbKwPi5LZh9ADeZqPjHeM33MfwZySHwj0xGmk7A2lqbYSKfwZyQ0wFAbs6iLRvhhndhtSXXENsdRDUy9-0Ae5ZrKhFRlmaxOm0rkDLG9UbUc186ta0RSsDXew"/>
+<span class="font-body-md text-sm text-on-surface">Facebook</span>
+</button>
+</div>
+</div>
+<p class="mt-10 text-center font-body-md text-sm text-on-surface-variant">
+                ليس لديك حساب؟ <a class="text-primary font-bold hover:underline transition-all" href="#">إنشاء حساب جديد</a>
+</p>
+</div>
+<!-- LEFT COLUMN (Visual) -->
+<div class="hidden md:flex md:w-1/2 lg:w-7/12 xl:w-2/3 bg-gradient-procedural relative overflow-hidden items-center justify-center">
+<!-- Atmospheric particles overlay (simulated via CSS for simplicity, WebGL preferred for actual implementation) -->
+<div class="absolute inset-0 opacity-30 mix-blend-screen pointer-events-none" style="background-image: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 50px 50px;"></div>
+<!-- Soft radial glow behind shoe -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary-container/20 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center justify-center p-12 text-center w-full">
+<div class="mb-12 relative w-full max-w-[600px] aspect-square flex items-center justify-center">
+<img alt="Premium Egyptian Footwear" class="w-full object-contain animate-float drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-20" src="https://lh3.googleusercontent.com/aida/AEtjO1UlZK1CAcahy5sICGlfFklkyaEBJ2KuSirVnZKgFhXk1H_InlK4DecOUQb_n3MCtliNR7BbwXOKtxWi2XK58Q8LvwM0asvdFGS5W-H2sNWt83mnaT9sMg9JzGEqUQ5IX9lvYnxTUPt_LBqmiikbXShgK5Hj6LKfXzcZYAC41N68BrAFpSiVfXr6wK3B0itsYirCY1i7h9EFHgY-BhVPomPTCAvwvU8Samd6aBF0MvjUzgF5deJryYdn4xsG"/>
+</div>
+<div class="absolute bottom-12 left-12 right-12 text-left z-10">
+<h2 class="font-display-lg text-display-lg text-surface-white mb-4 drop-shadow-md">Smart Store</h2>
+<p class="font-body-lg text-body-lg text-surface-container-lowest/80 max-w-md tracking-wide">Premium Egyptian Footwear.<br/>Where heritage meets modern precision.</p>
+</div>
+</div>
+</div>
+</div>
+</body></html>

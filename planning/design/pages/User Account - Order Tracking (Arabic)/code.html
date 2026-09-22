@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تتبع الطلب - Luxury Soles</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#39b8fd",
+                      "surface-container-high": "#eae7e7",
+                      "surface-bright": "#fcf9f8",
+                      "outline-variant": "#d0c5af",
+                      "on-surface-variant": "#4d4635",
+                      "surface-container-low": "#f6f3f2",
+                      "on-primary-fixed": "#241a00",
+                      "on-surface": "#1c1b1b",
+                      "secondary-fixed": "#c9e6ff",
+                      "surface-container-highest": "#e5e2e1",
+                      "primary-container": "#d4af37",
+                      "on-secondary": "#ffffff",
+                      "primary-fixed": "#ffe088",
+                      "on-tertiary-fixed-variant": "#7c008e",
+                      "surface-tint": "#735c00",
+                      "on-background": "#1c1b1b",
+                      "on-error": "#ffffff",
+                      "gold-glow": "rgba(212, 175, 55, 0.4)",
+                      "secondary": "#006591",
+                      "on-primary-fixed-variant": "#574500",
+                      "on-error-container": "#93000a",
+                      "on-secondary-container": "#004666",
+                      "tertiary-container": "#f58bff",
+                      "outline": "#7f7663",
+                      "on-primary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "inverse-primary": "#e9c349",
+                      "surface": "#fcf9f8",
+                      "royal-blue": "#18509F",
+                      "tertiary": "#a200ba",
+                      "tertiary-fixed-dim": "#fbabff",
+                      "secondary-fixed-dim": "#89ceff",
+                      "tertiary-fixed": "#ffd6fd",
+                      "primary": "#735c00",
+                      "surface-container": "#f0eded",
+                      "surface-dim": "#dcd9d9",
+                      "on-secondary-fixed": "#001e2f",
+                      "inverse-on-surface": "#f3f0ef",
+                      "on-secondary-fixed-variant": "#004c6e",
+                      "primary-fixed-dim": "#e9c349",
+                      "background": "#fcf9f8",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed": "#36003e",
+                      "surface-variant": "#e5e2e1",
+                      "on-primary-container": "#554300",
+                      "on-tertiary-container": "#79008b",
+                      "surface-white": "#FFFFFF",
+                      "error": "#ba1a1a",
+                      "inverse-surface": "#313030",
+                      "on-tertiary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "unit": "4px",
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Bodoni Moda"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-md": [
+                              "Bodoni Moda"
+                      ],
+                      "headline-sm": [
+                              "Bodoni Moda"
+                      ],
+                      "label-caps": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg-mobile": [
+                              "Bodoni Moda"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+            }
+          }
+      </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .product-card-shadow {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+            transition: all 0.3s ease;
+        }
+        
+        .product-card-shadow:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(212, 175, 55, 0.08);
+        }
+        
+        .stepper-line {
+            position: absolute;
+            right: 1.25rem;
+            top: 2.5rem;
+            bottom: -1rem;
+            width: 2px;
+            background-color: theme('colors.outline-variant');
+            z-index: 0;
+        }
+        
+        .stepper-line-active {
+            background-color: theme('colors.primary-container');
+        }
+
+        .step-icon-container {
+            position: relative;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface-white/80 dark:bg-surface-dim/80 backdrop-blur-xl fixed top-0 w-full z-50 shadow-sm border-b border-outline-variant/30">
+<div class="flex flex-row-reverse justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto">
+<!-- Brand -->
+<a class="font-display-lg text-headline-sm md:text-display-lg text-primary dark:text-primary-fixed tracking-tight" href="#">Luxury Soles</a>
+<!-- Actions (Left side due to RTL) -->
+<div class="flex items-center gap-6">
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-300 scale-95 duration-200 ease-in-out">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-300 scale-95 duration-200 ease-in-out">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-300 scale-95 duration-200 ease-in-out relative">
+<span class="material-symbols-outlined text-[24px]">shopping_cart</span>
+<span class="absolute -top-1 -right-2 bg-primary-container text-on-primary-container text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
+</button>
+</div>
+<!-- Mobile Menu Trigger -->
+<button class="md:hidden text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Page Header -->
+<div class="mb-12">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-4">تتبع الطلب</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant flex items-center gap-2">
+<span>رقم الطلب:</span>
+<span class="font-bold text-on-surface">#ORD-2024-8892</span>
+<span class="text-outline mx-2">•</span>
+<span>تاريخ الطلب: 15 أكتوبر 2024</span>
+</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Column: Order Details & Address (RTL makes it right structurally, but visually we often place secondary info left in RTL or vice versa depending on emphasis. Let's make tracking prominent on Right (Cols 1-5), Details on Left (Cols 6-12)) -->
+<!-- Tracking Stepper Column -->
+<div class="lg:col-span-5 order-1 lg:order-2">
+<div class="glass-panel rounded-xl p-8 sticky top-32">
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-8 border-b border-outline-variant/30 pb-4">حالة الشحنة</h2>
+<div class="relative">
+<!-- Stepper Items -->
+<!-- Step 1: Confirmed (Completed) -->
+<div class="flex mb-10 relative">
+<div class="stepper-line stepper-line-active"></div>
+<div class="step-icon-container flex-shrink-0 w-10 h-10 rounded-full bg-primary-container flex items-center justify-center ml-6 border-4 border-surface-white">
+<span class="material-symbols-outlined text-on-primary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-[18px] font-semibold text-on-surface">تأكيد الطلب</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">تم استلام طلبك بنجاح</p>
+<span class="font-label-caps text-label-caps text-outline mt-2 block">15 أكتوبر - 10:30 صباحاً</span>
+</div>
+</div>
+<!-- Step 2: Processing (Completed) -->
+<div class="flex mb-10 relative">
+<div class="stepper-line stepper-line-active"></div>
+<div class="step-icon-container flex-shrink-0 w-10 h-10 rounded-full bg-primary-container flex items-center justify-center ml-6 border-4 border-surface-white">
+<span class="material-symbols-outlined text-on-primary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-[18px] font-semibold text-on-surface">جاري التجهيز</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">نقوم بتغليف طلبك بعناية فائقة</p>
+<span class="font-label-caps text-label-caps text-outline mt-2 block">16 أكتوبر - 09:15 صباحاً</span>
+</div>
+</div>
+<!-- Step 3: Shipped (Current) -->
+<div class="flex mb-10 relative">
+<div class="stepper-line"></div>
+<div class="step-icon-container flex-shrink-0 w-10 h-10 rounded-full bg-surface-white border-2 border-primary-container flex items-center justify-center ml-6 shadow-[0_0_15px_rgba(212,175,55,0.4)]">
+<span class="material-symbols-outlined text-primary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-[18px] font-semibold text-primary">تم الشحن</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">غادرت الشحنة مستودعاتنا وهي في طريقها إليك</p>
+<span class="font-label-caps text-label-caps text-primary mt-2 block">17 أكتوبر - 14:20 مساءً</span>
+</div>
+</div>
+<!-- Step 4: Out for Delivery (Pending) -->
+<div class="flex mb-10 relative">
+<div class="stepper-line"></div>
+<div class="step-icon-container flex-shrink-0 w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center ml-6 border-4 border-surface-white">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">directions_run</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-[18px] font-semibold text-on-surface-variant">قيد التوصيل</h3>
+<p class="font-body-md text-body-md text-outline mt-1">المندوب في طريقه لعنوانك</p>
+</div>
+</div>
+<!-- Step 5: Delivered (Pending) -->
+<div class="flex relative">
+<div class="step-icon-container flex-shrink-0 w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center ml-6 border-4 border-surface-white">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">home</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-[18px] font-semibold text-on-surface-variant">تم التوصيل</h3>
+<p class="font-body-md text-body-md text-outline mt-1">تم تسليم الطلب بنجاح</p>
+</div>
+</div>
+</div>
+<!-- Carrier Info -->
+<div class="mt-12 pt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-[28px]">flight_takeoff</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-outline mb-1">شركة الشحن</p>
+<p class="font-headline-sm text-[16px] font-semibold text-on-surface">Premium Logistics Co.</p>
+</div>
+</div>
+<div class="text-left">
+<p class="font-label-caps text-label-caps text-outline mb-1">رقم التتبع الإضافي</p>
+<p class="font-body-md text-body-md text-on-surface font-medium">PL-998273645</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Details Column -->
+<div class="lg:col-span-7 order-2 lg:order-1 flex flex-col gap-6">
+<!-- Product List Card -->
+<div class="glass-panel rounded-xl p-8">
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-6">تفاصيل المنتجات</h2>
+<div class="flex flex-col gap-6">
+<!-- Product 1 -->
+<div class="flex gap-6 pb-6 border-b border-outline-variant/20">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="A high-fashion studio shot of a classic black leather Oxford shoe for men, resting on a pristine white marble pedestal. Soft ambient lighting highlights the premium leather texture and the subtle gold stitching details. The background is a clean, bright minimalist setting reflecting a luxury e-commerce aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd9oZJXLgBmSc641GFZI1w1XKa_5bExZ4G-NYIWy7NCebBJSizUP5jsGfZ2Avgzsjc1gyo4VeOUbvYJ1usZJqSDPZ41X3VFcFXcaHeGKCsSWK4Y7MZ8Tu6kakege1hivV-73itRLz8EDSobtDONJoFzr980C4hkZglB4ETdMEXWktv3iNa70eTDpHMwl_OdJiJ39vGpH-1vKWfR_LbOBTb_iIwWdgDtadKt4GGBCnEK6jBFHNFUMU0sw"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-[18px] text-on-surface">حذاء أكسفورد كلاسيكي - جلد طبيعي</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">اللون: أسود داكن | المقاس: 42</p>
+</div>
+<span class="font-headline-sm text-[18px] text-primary">3,500 ج.م</span>
+</div>
+<div class="flex items-center gap-2 mt-4">
+<span class="font-label-caps text-label-caps bg-surface-container-high px-3 py-1 rounded-full text-on-surface-variant">الكمية: 1</span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="flex gap-6">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="A luxurious women's stiletto heel in rich deep burgundy velvet, displayed on a translucent glass shelf against a bright, airy white background. The lighting is soft and elegant, creating a sophisticated glow around the shoe, emphasizing high-end craftsmanship and modern fashion design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJDWN1ZD8whXI1-dwlbxT2-fYZ_cxCPpmGsXO2fBmCA5jHbkCpdPz7kXqp8EWrJ2JpmYosEXKNYAklF3n2EQ0Hd7SONHiafRI5WrPajeDQhhm58Hbdosm3x6Wu2uG42GU1AznIsj6ESvy3LoHnOF790eKIBbtk7hImxJL7j9KZwHNidrJ5CCRaHjdhACQ1uM2TI1ABj9MIeq4gNTZ9GIA7-tAkzd9P8-wuL-htZDZ2p0OVeh30OLEwFg"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-[18px] text-on-surface">حذاء كعب عالي مخملي</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">اللون: عنابي | المقاس: 38</p>
+</div>
+<span class="font-headline-sm text-[18px] text-primary">4,200 ج.م</span>
+</div>
+<div class="flex items-center gap-2 mt-4">
+<span class="font-label-caps text-label-caps bg-surface-container-high px-3 py-1 rounded-full text-on-surface-variant">الكمية: 1</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Delivery Address Card -->
+<div class="glass-panel rounded-xl p-8 product-card-shadow">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary-container text-[28px]">location_on</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">عنوان التوصيل</h2>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6">
+<h3 class="font-body-lg text-body-lg font-bold text-on-surface mb-2">أحمد محمد حسن</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            فيلا 45، شارع النخيل المتفرع من شارع التسعين الشمالي<br/>
+                            التجمع الخامس، القاهرة الجديدة<br/>
+                            القاهرة، جمهورية مصر العربية
+                        </p>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-[18px]">phone_iphone</span>
+<span dir="ltr">+20 100 123 4567</span>
+</div>
+</div>
+</div>
+<!-- Order Summary (Optional but good for e-commerce) -->
+<div class="glass-panel rounded-xl p-8">
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-6">ملخص الدفع</h2>
+<div class="space-y-4">
+<div class="flex justify-between text-on-surface-variant font-body-md">
+<span>المجموع الفرعي</span>
+<span>7,700 ج.م</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-md">
+<span>رسوم التوصيل (Premium)</span>
+<span>150 ج.م</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-md">
+<span>الضرائب</span>
+<span>1,099 ج.م</span>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex justify-between items-center">
+<span class="font-headline-sm text-[20px] font-bold text-on-surface">الإجمالي</span>
+<span class="font-display-lg text-[24px] text-primary">8,949 ج.م</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-16 w-full mx-auto rtl">
+<div class="max-w-container-max mx-auto w-full col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<div class="font-display-lg text-headline-md text-primary dark:text-primary-fixed mb-4">Luxury Soles</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant mb-6">
+                    © 2024 Luxury Soles. All Rights Reserved. Crafted in Egypt.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-8 justify-start md:justify-end">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-primary decoration-1 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-primary decoration-1 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Collections</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-primary decoration-1 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Sustainability</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-primary decoration-1 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Store Locator</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-primary decoration-1 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Shipping &amp; Returns</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-primary decoration-1 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+</body></html>

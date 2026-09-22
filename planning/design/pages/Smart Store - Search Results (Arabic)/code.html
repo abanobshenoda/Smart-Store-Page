@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>نتائج البحث - سمارت ستور</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-fixed": "#241a00",
+                        "secondary-fixed-dim": "#89ceff",
+                        "surface-tint": "#735c00",
+                        "primary": "#735c00",
+                        "surface-variant": "#e5e2e1",
+                        "on-background": "#1c1b1b",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#eae7e7",
+                        "outline": "#7f7663",
+                        "primary-fixed-dim": "#e9c349",
+                        "secondary": "#006591",
+                        "on-surface-variant": "#4d4635",
+                        "surface-bright": "#fcf9f8",
+                        "primary-fixed": "#ffe088",
+                        "outline-variant": "#d0c5af",
+                        "on-secondary-container": "#004666",
+                        "surface-container": "#f0eded",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary-fixed-dim": "#fbabff",
+                        "tertiary": "#a200ba",
+                        "inverse-surface": "#313030",
+                        "on-secondary-fixed-variant": "#004c6e",
+                        "gold-glow": "rgba(212, 175, 55, 0.4)",
+                        "on-primary-container": "#554300",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fcf9f8",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffd6fd",
+                        "surface-white": "#FFFFFF",
+                        "on-primary-fixed-variant": "#574500",
+                        "tertiary-container": "#f58bff",
+                        "inverse-primary": "#e9c349",
+                        "on-tertiary-fixed": "#36003e",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "royal-blue": "#18509F",
+                        "surface-container-low": "#f6f3f2",
+                        "on-tertiary-fixed-variant": "#7c008e",
+                        "secondary-container": "#39b8fd",
+                        "primary-container": "#d4af37",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-fixed": "#001e2f",
+                        "on-tertiary-container": "#79008b",
+                        "background": "#fcf9f8",
+                        "on-surface": "#1c1b1b",
+                        "secondary-fixed": "#c9e6ff",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "unit": "4px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Bodoni Moda"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-sm": ["Bodoni Moda"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Hanken Grotesk', sans-serif; background-color: #fcf9f8; color: #1c1b1b; }
+        .font-serif { font-family: 'Bodoni Moda', serif; }
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .glass-panel { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); }
+        .hover-lift { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(115, 92, 0, 0.05); }
+        .search-input:focus { outline: none; border-color: #006591; box-shadow: 0 0 0 4px rgba(0, 101, 145, 0.1); }
+        .chip { transition: all 0.2s ease-in-out; }
+        .chip.active { background-color: #735c00; color: #ffffff; border-color: #735c00; }
+        .chip:hover:not(.active) { background-color: #e5e2e1; }
+        
+        /* Custom Scrollbar for chips container */
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-xl border-b border-outline-variant/20 dark:border-outline/10 shadow-sm glass-nav">
+<div class="flex flex-row-reverse justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
+<!-- Left: Search (Hidden on Mobile) -->
+<div class="hidden md:flex items-center w-1/4">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-highest border-none rounded-DEFAULT pl-10 pr-4 py-2 text-body-md font-body-md focus:ring-1 focus:ring-primary text-right" dir="rtl" placeholder="بحث..." type="text"/>
+</div>
+</div>
+<!-- Center: Logo -->
+<div class="flex-shrink-0 text-center flex-1 md:flex-none">
+<a class="font-display-lg text-headline-sm md:text-headline-md tracking-tighter text-on-surface dark:text-surface-bright font-serif" href="#">SMART STORE</a>
+</div>
+<!-- Right: Navigation & Actions -->
+<div class="flex items-center justify-end w-1/4 gap-6">
+<!-- Desktop Nav -->
+<div class="hidden lg:flex items-center gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="#">مجموعاتنا</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="#">الأكثر مبيعاً</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="#">تسوق</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300" href="#">الرئيسية</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<button aria-label="Favorite" class="scale-95 transition-transform hover:text-primary dark:hover:text-primary-fixed-dim">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button aria-label="Profile" class="scale-95 transition-transform hover:text-primary dark:hover:text-primary-fixed-dim hidden md:block">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button aria-label="Cart" class="scale-95 transition-transform hover:text-primary dark:hover:text-primary-fixed-dim relative">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-on-primary text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+</button>
+<button aria-label="Menu" class="lg:hidden scale-95 transition-transform hover:text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-28 pb-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Search Hero Section -->
+<section class="mb-12 text-center">
+<h1 class="font-headline-md md:font-display-lg text-headline-md md:text-display-lg text-on-surface font-serif mb-6">ما الذي تبحث عنه؟</h1>
+<div class="relative max-w-2xl mx-auto mb-4">
+<input autofocus="" class="w-full bg-surface-white border border-outline-variant rounded-lg px-6 py-4 pr-14 text-body-lg font-body-lg text-on-surface search-input shadow-sm transition-all" dir="rtl" type="text" value="حقائب فاخرة"/>
+<span class="material-symbols-outlined absolute right-5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[28px]">search</span>
+<button class="absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+<!-- Search Suggestions (Simulated Dropdown) -->
+<div class="absolute top-full left-0 right-0 mt-2 bg-surface-white rounded-lg shadow-lg border border-outline-variant/50 overflow-hidden z-40 hidden group-focus-within:block text-right">
+<ul class="py-2">
+<li><a class="block px-6 py-3 hover:bg-surface-container-lowest font-body-md text-on-surface transition-colors" href="#"><span class="font-bold">حقائب فاخرة</span> جلد طبيعي</a></li>
+<li><a class="block px-6 py-3 hover:bg-surface-container-lowest font-body-md text-on-surface transition-colors" href="#"><span class="font-bold">حقائب فاخرة</span> للسفر</a></li>
+<li><a class="block px-6 py-3 hover:bg-surface-container-lowest font-body-md text-on-surface transition-colors" href="#">أحدث <span class="font-bold">حقائب فاخرة</span> 2024</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-wrap justify-center gap-3 text-body-md font-body-md text-on-surface-variant">
+<span class="opacity-70">شائع:</span>
+<a class="hover:text-primary transition-colors border-b border-transparent hover:border-primary" href="#">أحذية رياضية</a>
+<span class="opacity-30">|</span>
+<a class="hover:text-primary transition-colors border-b border-transparent hover:border-primary" href="#">ساعات ذكية</a>
+<span class="opacity-30">|</span>
+<a class="hover:text-primary transition-colors border-b border-transparent hover:border-primary" href="#">عطور صيفية</a>
+</div>
+</section>
+<!-- Filters & Results Count -->
+<section class="mb-8 flex flex-col md:flex-row justify-between items-center gap-6 border-b border-outline-variant/30 pb-6">
+<p class="font-body-md text-body-md text-on-surface-variant">تم العثور على <span class="font-bold text-on-surface">45</span> نتيجة لـ "<span class="text-on-surface">حقائب فاخرة</span>"</p>
+<!-- Horizontal Filter Chips -->
+<div class="flex overflow-x-auto hide-scrollbar w-full md:w-auto gap-3 py-1" dir="rtl">
+<button class="chip active whitespace-nowrap px-4 py-2 rounded-full border font-label-caps text-label-caps flex items-center gap-2">
+                    الكل
+                </button>
+<button class="chip whitespace-nowrap bg-surface-white border border-outline-variant text-on-surface px-4 py-2 rounded-full font-label-caps text-label-caps flex items-center gap-2">
+                    النساء
+                </button>
+<button class="chip whitespace-nowrap bg-surface-white border border-outline-variant text-on-surface px-4 py-2 rounded-full font-label-caps text-label-caps flex items-center gap-2">
+                    الرجال
+                </button>
+<button class="chip whitespace-nowrap bg-surface-white border border-outline-variant text-on-surface px-4 py-2 rounded-full font-label-caps text-label-caps flex items-center gap-2">
+                    السعر <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<button class="chip whitespace-nowrap bg-surface-white border border-outline-variant text-on-surface px-4 py-2 rounded-full font-label-caps text-label-caps flex items-center gap-2">
+                    الماركة <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<button class="chip whitespace-nowrap bg-surface-white border border-outline-variant text-on-surface px-4 py-2 rounded-full font-label-caps text-label-caps flex items-center gap-2">
+                    اللون <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<button class="md:hidden whitespace-nowrap bg-surface-container-highest border border-outline-variant text-on-surface px-4 py-2 rounded-full font-label-caps text-label-caps flex items-center gap-2 mr-auto">
+<span class="material-symbols-outlined text-[16px]">tune</span> فلاتر
+                </button>
+</div>
+<div class="hidden md:flex items-center gap-3">
+<button class="text-on-surface-variant hover:text-primary flex items-center gap-2 font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[20px]">sort</span> ترتيب حسب
+                </button>
+<div class="h-6 w-px bg-outline-variant"></div>
+<button class="bg-surface-white border border-outline-variant text-on-surface px-4 py-2 rounded-full font-label-caps text-label-caps flex items-center gap-2 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[18px]">tune</span> جميع الفلاتر
+                </button>
+</div>
+</section>
+<!-- Product Grid (Bento-inspired asymmetry) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-16">
+<!-- Featured Product (Spans 2 columns) -->
+<div class="col-span-1 sm:col-span-2 lg:col-span-2 group bg-surface-white rounded-full p-4 hover-lift relative overflow-hidden flex flex-col md:flex-row gap-6 shadow-sm border border-outline-variant/10">
+<button class="absolute top-6 left-6 z-10 w-10 h-10 bg-surface-white/80 backdrop-blur rounded-full flex items-center justify-center text-on-surface hover:text-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined">favorite_border</span>
+</button>
+<div class="relative w-full md:w-1/2 aspect-square md:aspect-auto md:h-[400px] rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A luxurious, modern leather tote bag in deep tan color, professionally photographed in a bright, minimalist studio setting with soft natural light highlighting the rich texture of the leather. High-end e-commerce aesthetic with a crisp white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN-mlS935qCPkse-e8qer3MgklLJDyhO6HPsCEfk5kS9iDtt4aod1MQhUvM8TmMSyuDrRyJOQKemuBW_MJ-OOz0uG7TAK24cm07cuqtgiqcg5ZVfcOUui_WLcKqAVCC4_icAQ9LtLo8cyj8MDPY7a8fKNWH1lwZ2hXbpNFu2jWgA4oiszxHFlklO_JyittALAGrepayJw-mQgUH-v3hcx7rrTwHeioHk1_4B_SKXYPLy069x6NlFIpyg"/>
+<div class="absolute bottom-4 right-4 bg-primary text-on-primary font-label-caps text-label-caps px-3 py-1 rounded-sm">حصري</div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-center p-4 text-right">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-2 tracking-widest uppercase">Maison Classic</p>
+<h3 class="font-headline-sm text-headline-sm font-serif text-on-surface mb-4">حقيبة 'أورورا' الجلدية الفاخرة</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">تصميم كلاسيكي يجمع بين الأناقة والعملية، مصنوعة يدوياً من أجود أنواع الجلود الإيطالية لترافقك في جميع مناسباتك.</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-headline-sm text-headline-sm font-serif text-on-surface">5,200 ج.م</span>
+<button class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center hover:bg-on-primary-fixed hover:shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-all">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Standard Product Card 1 -->
+<div class="group bg-surface-white rounded-full p-3 hover-lift relative shadow-sm border border-outline-variant/10 flex flex-col">
+<button class="absolute top-5 left-5 z-10 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite_border</span>
+</button>
+<div class="w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-lowest mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sleek, minimalist black leather crossbody bag featuring subtle gold hardware, photographed against a pristine white background. The lighting is soft yet directional, creating elegant shadows that emphasize the high-quality craftsmanship and premium fashion aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANQXhyS9ITuMLPCI9RNQcpEIXrdZmptGolMJkvfVAetca40gx9ZrHmdRDmycsg8if0jJNoDbVXsThXY6Q_XfqILEL4zEJp0AJqvEQONOW3fUTqNlNFWrs1VLfwZFVWBnS6Ms26GxcK2721Sq28UL9oPcdpn9w2uEtow8PSjKMMSKmJJghEEr5lR4CrJWtcS_SGGprH8W0NQDCuJt76HfTN1GI6XihRb1aSnNsVIzPbnuargqTS3vHFnQ"/>
+</div>
+<div class="text-right px-2 flex flex-col flex-grow">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-1">Noir Collection</p>
+<h3 class="font-body-lg text-body-lg font-serif text-on-surface mb-2 line-clamp-1">حقيبة كتف 'إكليبس'</h3>
+<div class="flex items-center justify-between mt-auto pt-2">
+<span class="font-headline-sm text-[20px] font-serif text-on-surface">2,850 ج.م</span>
+<button class="text-primary hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Standard Product Card 2 -->
+<div class="group bg-surface-white rounded-full p-3 hover-lift relative shadow-sm border border-outline-variant/10 flex flex-col">
+<button class="absolute top-5 left-5 z-10 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite_border</span>
+</button>
+<div class="w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-lowest mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A structured, geometric clutch bag in a soft cream color, placed on a subtle reflective surface. High-key lighting highlights the architectural lines of the accessory. The aesthetic is clean, luxurious, and highly polished, suitable for a premium boutique interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuxerQF0xjWbFfvByIWI-EmueIE257tdqH8sH4l4hpGcFzUfsUUYCjekkpcLOp4SIXCsemH7gVm1RslPgMxURZGY6bXdMBH4tq_JLne5r1dFR3ImTbmCl0OI5963C59GJtn03TAHsJ8UqU6soob53qJQv7o1cDipk8pseTrXbNGCVlX1fp4PfkXxyJTpbJnfgWsHN2QH_-wmNgQVNgnII8nNCpVfq55OW9DGAnxpYHp8okQG7P74zKKQ"/>
+</div>
+<div class="text-right px-2 flex flex-col flex-grow">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-1">Lumina</p>
+<h3 class="font-body-lg text-body-lg font-serif text-on-surface mb-2 line-clamp-1">كلاتش هندسي 'كريستال'</h3>
+<div class="flex items-center gap-2 mb-2">
+<div class="flex gap-1">
+<div class="w-3 h-3 rounded-full bg-[#f3e5ab] border border-outline-variant"></div>
+<div class="w-3 h-3 rounded-full bg-[#000000] border border-outline-variant"></div>
+</div>
+</div>
+<div class="flex items-center justify-between mt-auto pt-2">
+<span class="font-headline-sm text-[20px] font-serif text-on-surface">1,900 ج.م</span>
+<button class="text-primary hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Standard Product Card 3 -->
+<div class="group bg-surface-white rounded-full p-3 hover-lift relative shadow-sm border border-outline-variant/10 flex flex-col">
+<div class="absolute top-5 right-5 z-10 bg-error text-on-error font-label-caps text-[10px] px-2 py-1 rounded-sm">خصم 20%</div>
+<button class="absolute top-5 left-5 z-10 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite_border</span>
+</button>
+<div class="w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-lowest mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An oversized woven straw summer tote bag with elegant tan leather straps, elegantly styled against a pure white backdrop. Bright, even lighting emphasizes the natural texture of the weave. The image exudes a relaxed yet sophisticated resort luxury vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL34gV80eEK4Pe8ZgrRHiM1mn7nOjqffxXQ7BwMopGguJpUmz6b2YfMhM1LUpboaLZYxTl3VIzIUEjHuzq_C-PYdiZLef9Hxz0Cpo5RBX5nRCKB38HcxNjgS9kXwoma6qnTmGVcBG0QwdJgWg9RPq0romktYqwwc7InJWofCQGt6XW4N4U9AYlFkDCiYyphG8BnzhUqGJKCzgBOp2-5GQFb06DyRFrzqQt6fL-ukaou9-IUaaAJxNyAg"/>
+</div>
+<div class="text-right px-2 flex flex-col flex-grow">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-1">Resort '24</p>
+<h3 class="font-body-lg text-body-lg font-serif text-on-surface mb-2 line-clamp-1">حقيبة تسوق 'صن رايز' المنسوجة</h3>
+<div class="flex items-center justify-between mt-auto pt-2">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[20px] font-serif text-error">3,120 ج.م</span>
+<span class="font-body-md text-[14px] text-on-surface-variant line-through">3,900 ج.م</span>
+</div>
+<button class="text-primary hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Standard Product Card 4 -->
+<div class="group bg-surface-white rounded-full p-3 hover-lift relative shadow-sm border border-outline-variant/10 flex flex-col">
+<button class="absolute top-5 left-5 z-10 text-primary transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-lowest mb-4">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A small, structured top-handle bag in a rich burgundy color, showcasing premium pebbled leather texture. The product is shot straight-on in a high-end studio environment with soft shadows to give it a three-dimensional, premium appearance against a white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAq5LSwWta0sWRRcObSHZdBlQ67_6kjDJpPil2XhrWB1sj91rGy4JLbSkM3BIq622cMW2NS1K_WGAVx-VzlrgekZQHfOiXIKw2YARnP7TK0oTq3X-uK0fU6vl8aXlO2mruH4gllZiuzTXGohEXhkSuX2K79h_mabrCsBhF-izegD0ACceCXCQ3Awioxokbud7NeonkPpUgBQSdv4Rb8N8l9djhrUgEh4ExlmIiNJt-SKJ0yS3FoVpk-A"/>
+</div>
+<div class="text-right px-2 flex flex-col flex-grow">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-1">Heritage</p>
+<h3 class="font-body-lg text-body-lg font-serif text-on-surface mb-2 line-clamp-1">حقيبة يد صغيرة 'فينتيج'</h3>
+<div class="flex items-center justify-between mt-auto pt-2">
+<span class="font-headline-sm text-[20px] font-serif text-on-surface">4,500 ج.م</span>
+<button class="text-primary hover:text-on-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Load More -->
+<div class="col-span-1 sm:col-span-2 lg:col-span-4 flex justify-center mt-8">
+<button class="px-8 py-3 bg-transparent border border-primary text-primary font-body-md rounded-full hover:bg-primary/5 transition-colors duration-300">
+                    عرض المزيد من النتائج
+                </button>
+</div>
+</div>
+<!-- Empty State / Suggestion Section (Didn't find what you're looking for?) -->
+<section class="mb-16 bg-surface-container-low rounded-xl p-8 md:p-12 text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(#d0c5af 1px, transparent 1px); background-size: 20px 20px;"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<span class="material-symbols-outlined text-outline text-[48px] mb-4">search_off</span>
+<h2 class="font-headline-md text-headline-md font-serif text-on-surface mb-4">لم تجد ما تبحث عنه؟</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">حاول استخدام كلمات مفتاحية مختلفة أو تصفح فئاتنا الرئيسية لاكتشاف أحدث التشكيلات.</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="px-6 py-3 bg-surface-white border border-outline-variant rounded-full font-label-caps text-label-caps text-on-surface hover:border-primary hover:text-primary transition-all shadow-sm" href="#">تصفح الحقائب النسائية</a>
+<a class="px-6 py-3 bg-surface-white border border-outline-variant rounded-full font-label-caps text-label-caps text-on-surface hover:border-primary hover:text-primary transition-all shadow-sm" href="#">تصفح الإكسسوارات</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline/20">
+<div class="flex flex-col md:flex-row-reverse justify-between gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Brand & Copyright -->
+<div class="flex flex-col items-center md:items-end mb-8 md:mb-0">
+<span class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim font-serif mb-4">SMART STORE</span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant text-center md:text-right">
+                    © 2024 سمارت ستور. جميع الحقوق محفوظة. صنع في مصر.
+                </p>
+</div>
+<!-- Links -->
+<div class="flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-4 font-body-md text-body-md" dir="rtl">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">عن المتجر</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">سياسة الخصوصية</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">الشروط والأحكام</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">تتبع الطلب</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">اتصل بنا</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">الأسئلة الشائعة</a>
+</div>
+</div>
+</footer>
+</body></html>

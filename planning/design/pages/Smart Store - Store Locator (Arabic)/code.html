@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>محدد مواقع المتاجر - سمارت ستور</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-fixed": "#241a00",
+                        "secondary-fixed-dim": "#89ceff",
+                        "surface-tint": "#735c00",
+                        "primary": "#735c00",
+                        "surface-variant": "#e5e2e1",
+                        "on-background": "#1c1b1b",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#eae7e7",
+                        "outline": "#7f7663",
+                        "primary-fixed-dim": "#e9c349",
+                        "secondary": "#006591",
+                        "on-surface-variant": "#4d4635",
+                        "surface-bright": "#fcf9f8",
+                        "primary-fixed": "#ffe088",
+                        "outline-variant": "#d0c5af",
+                        "on-secondary-container": "#004666",
+                        "surface-container": "#f0eded",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary-fixed-dim": "#fbabff",
+                        "tertiary": "#a200ba",
+                        "inverse-surface": "#313030",
+                        "on-secondary-fixed-variant": "#004c6e",
+                        "gold-glow": "rgba(212, 175, 55, 0.4)",
+                        "on-primary-container": "#554300",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fcf9f8",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffd6fd",
+                        "surface-white": "#FFFFFF",
+                        "on-primary-fixed-variant": "#574500",
+                        "tertiary-container": "#f58bff",
+                        "inverse-primary": "#e9c349",
+                        "on-tertiary-fixed": "#36003e",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "royal-blue": "#18509F",
+                        "surface-container-low": "#f6f3f2",
+                        "on-tertiary-fixed-variant": "#7c008e",
+                        "secondary-container": "#39b8fd",
+                        "primary-container": "#d4af37",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-fixed": "#001e2f",
+                        "on-tertiary-container": "#79008b",
+                        "background": "#fcf9f8",
+                        "on-surface": "#1c1b1b",
+                        "secondary-fixed": "#c9e6ff",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "unit": "4px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Bodoni Moda"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-sm": ["Bodoni Moda"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-left: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .store-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(212, 175, 55, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md h-screen overflow-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-xl shadow-sm border-b border-outline-variant/20 dark:border-outline/10">
+<div class="flex flex-row-reverse justify-between items-center px-margin-desktop h-20 max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<!-- Brand Logo -->
+<div class="font-display-lg text-headline-md tracking-tighter text-on-surface dark:text-surface-bright uppercase">
+                SMART STORE
+            </div>
+<!-- Navigation Links (Hidden on Mobile) -->
+<ul class="hidden md:flex gap-8 flex-row-reverse">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">الرئيسية</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">تسوق</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">الأكثر مبيعاً</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">مجموعاتنا</a></li>
+</ul>
+<!-- Trailing Actions -->
+<div class="flex gap-4">
+<button class="text-on-surface hover:text-primary transition-colors scale-95 hover:scale-100"><span class="material-symbols-outlined" data-icon="search">search</span></button>
+<button class="text-on-surface hover:text-primary transition-colors scale-95 hover:scale-100"><span class="material-symbols-outlined" data-icon="favorite">favorite</span></button>
+<button class="text-on-surface hover:text-primary transition-colors scale-95 hover:scale-100"><span class="material-symbols-outlined" data-icon="person">person</span></button>
+<button class="text-on-surface hover:text-primary transition-colors scale-95 hover:scale-100"><span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span></button>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="relative w-full h-full pt-20 flex">
+<!-- Map Background -->
+<div class="absolute inset-0 z-0 bg-surface-container">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgfzwGMxhgpgFt1rohflR0k-NbW8XdvfuyWSVxdDT42DmVdXzU4TKWOqt9khtiOY8ypDTJoSw-Qm2nXLS76_OyN7UuvCfd57J9mZULOJgCfAqgSv_KMNRiuGVLjhaU5_q_O8HmXqqHW3qYqAcSCwu3_4dQSsYCA-aMz5EmLHkgn7MuMSImw5w2H_R3f8807mnEL1rBXamkJr_jBzh-spI_M4JvAllTVauEvby3pIUMJ-pz5idUQ7DiGg')"></div>
+<!-- Map Overlay (Optional for better contrast) -->
+<div class="absolute inset-0 bg-gradient-to-l from-white/10 to-transparent pointer-events-none"></div>
+</div>
+<!-- Store Locator Panel -->
+<div class="relative z-10 w-full md:w-[400px] lg:w-[480px] h-full glass-panel flex flex-col shadow-[10px_0_30px_rgba(0,0,0,0.05)] ml-auto overflow-hidden">
+<!-- Panel Header & Controls -->
+<div class="p-6 border-b border-outline-variant/30 flex-shrink-0 bg-white/60">
+<h1 class="font-headline-sm text-headline-sm text-on-surface mb-6">ابحث عن متجر</h1>
+<div class="space-y-4">
+<!-- City Selector -->
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-lowest border border-outline-variant rounded-lg py-3 px-4 pr-10 text-on-surface font-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-shadow" dir="rtl">
+<option value="">اختر المدينة</option>
+<option value="cairo">القاهرة</option>
+<option value="alexandria">الإسكندرية</option>
+<option value="giza">الجيزة</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-on-surface-variant pointer-events-none" data-icon="arrow_drop_down">arrow_drop_down</span>
+</div>
+<!-- Use My Location Button -->
+<button class="w-full flex items-center justify-center gap-2 bg-royal-blue/10 text-royal-blue border border-royal-blue/20 hover:bg-royal-blue/20 py-3 px-4 rounded-lg transition-colors font-body-md text-body-md">
+<span class="material-symbols-outlined" data-icon="my_location">my_location</span>
+                        استخدم موقعي الحالي
+                    </button>
+</div>
+</div>
+<!-- Store List -->
+<div class="flex-1 overflow-y-auto p-4 space-y-4 custom-scrollbar">
+<!-- Store Card 1 -->
+<div class="store-card bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/30 transition-all duration-300 cursor-pointer">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="font-headline-sm text-[20px] font-semibold text-on-surface">فرع الزمالك</h3>
+<p class="text-on-surface-variant font-body-md text-[14px]">٢٣ شارع طه حسين، الزمالك</p>
+</div>
+<span class="text-primary font-body-md text-[14px] font-bold bg-primary/10 px-2 py-1 rounded">2.4 كم</span>
+</div>
+<div class="h-32 mb-4 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A brightly lit, modern boutique store interior featuring sleek minimalist shelving showcasing high-end footwear. The atmosphere is luxurious, utilizing soft white ambient lighting, subtle gold metallic accents, and pristine marble flooring. The aesthetic aligns with a premium Smart Store brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOiYP1-9d0MAsPnjeBCDOSGU9CEaEweRWhJ0KxTNT-Ui2mq4ijZm8guW6ovR4sJTwqgG2jkBB5I4RnwdvjiGVh3w9zU0_X8O6rT-RhzukOEaw0r9ztsToAeJz3nsRd0_Xd4U3Yjh_ccY1z1wr0jKvUFdRy6twXYnAh6sLxWRyoQoXD-Xz1ztTQEBN-7AkD_vZQqZDSOy_SSk9fAget9iJZizNUqTOwNuy-p18m39QToY7d-1IXiaJgrQ"/>
+</div>
+<div class="space-y-2 text-[14px] text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary" data-icon="schedule">schedule</span>
+<span>مفتوح الآن - يغلق ١٠:٠٠ م</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary" data-icon="call">call</span>
+<span dir="ltr">+20 2 1234 5678</span>
+</div>
+</div>
+<div class="mt-4 flex gap-2">
+<button class="flex-1 bg-primary text-on-primary hover:shadow-[0_0_15px_rgba(212,175,55,0.4)] py-2 rounded-lg transition-all text-[14px] font-medium">الاتجاهات</button>
+<button class="flex-1 bg-transparent border border-primary text-primary hover:bg-primary/5 py-2 rounded-lg transition-all text-[14px] font-medium">تفاصيل المتجر</button>
+</div>
+</div>
+<!-- Store Card 2 -->
+<div class="store-card bg-surface-container-lowest rounded-xl p-4 border border-outline-variant/30 transition-all duration-300 cursor-pointer opacity-80 hover:opacity-100">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="font-headline-sm text-[20px] font-semibold text-on-surface">مول العرب</h3>
+<p class="text-on-surface-variant font-body-md text-[14px]">ميدان جهينة، السادس من أكتوبر</p>
+</div>
+<span class="text-on-surface-variant font-body-md text-[14px] font-bold bg-surface-variant px-2 py-1 rounded">12.8 كم</span>
+</div>
+<div class="space-y-2 text-[14px] text-on-surface-variant mt-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-error" data-icon="schedule">schedule</span>
+<span>مغلق - يفتح ١٠:٠٠ ص</span>
+</div>
+</div>
+<div class="mt-4 flex gap-2">
+<button class="flex-1 bg-primary text-on-primary hover:shadow-[0_0_15px_rgba(212,175,55,0.4)] py-2 rounded-lg transition-all text-[14px] font-medium">الاتجاهات</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

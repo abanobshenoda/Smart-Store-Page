@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \".claude/skills/0-orchestrator\" \".claude/skills/1-architecture\" \".claude/skills/2-ui-design\" \".claude/skills/3-frontend\" \".claude/skills/4-backend\" \".claude/skills/5-database\" \".claude/skills/6-security\" \".claude/skills/7-testing\" \".claude/skills/8-code-review\" \".claude/skills/9-performance\")",
+      "Edit(/.claude/skills/0-orchestrator/**)",
+      "Edit(/.claude/skills/2-ui-design/**)",
+      "Edit(/.claude/skills/3-frontend/**)",
+      "Edit(/.claude/skills/4-backend/**)",
+      "Edit(/.claude/skills/5-database/**)",
+      "Edit(/.claude/skills/6-security/**)",
+      "Edit(/.claude/skills/1-architecture/**)",
+      "Edit(/.claude/skills/8-code-review/**)",
+      "Edit(/.claude/skills/9-performance/**)",
+      "Bash(mkdir -p \".claude/skills\" 2>/dev/null; ls -la .claude/)"
+    ],
+    "additionalDirectories": [
+      "D:\\PROGRAMING\\websites\\Smart Store Page\\.claude\\skills"
+    ]
+  }
+}

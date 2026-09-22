@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>نايكي اير ماكس 2024 - Smart Store</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "gold-glow": "rgba(212, 175, 55, 0.4)",
+                        "on-tertiary-container": "#79008b",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-variant": "#e5e2e1",
+                        "surface-tint": "#735c00",
+                        "surface": "#fcf9f8",
+                        "tertiary-fixed": "#ffd6fd",
+                        "primary-container": "#d4af37",
+                        "on-background": "#1c1b1b",
+                        "on-tertiary-fixed": "#36003e",
+                        "on-secondary-fixed": "#001e2f",
+                        "tertiary-container": "#f58bff",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#313030",
+                        "on-tertiary": "#ffffff",
+                        "royal-blue": "#18509F",
+                        "on-secondary-container": "#004666",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#7f7663",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-container": "#f0eded",
+                        "surface-container-low": "#f6f3f2",
+                        "on-surface": "#1c1b1b",
+                        "primary": "#735c00",
+                        "secondary-container": "#39b8fd",
+                        "surface-container-high": "#eae7e7",
+                        "on-surface-variant": "#4d4635",
+                        "inverse-primary": "#e9c349",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#d0c5af",
+                        "secondary-fixed-dim": "#89ceff",
+                        "on-primary-fixed": "#241a00",
+                        "on-tertiary-fixed-variant": "#7c008e",
+                        "surface-bright": "#fcf9f8",
+                        "on-primary-container": "#554300",
+                        "background": "#fcf9f8",
+                        "primary-fixed": "#ffe088",
+                        "on-error": "#ffffff",
+                        "secondary": "#006591",
+                        "on-secondary-fixed-variant": "#004c6e",
+                        "surface-dim": "#dcd9d9",
+                        "secondary-fixed": "#c9e6ff",
+                        "tertiary": "#a200ba",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#fbabff",
+                        "on-secondary": "#ffffff",
+                        "surface-white": "#FFFFFF",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Bodoni Moda"],
+                        "display-lg": ["Bodoni Moda"],
+                        "display-lg-mobile": ["Bodoni Moda"],
+                        "label-caps": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Custom UI Micro-interactions */
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        .product-card {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(115, 92, 0, 0.1), 0 8px 10px -6px rgba(115, 92, 0, 0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #d4af37 0%, #735c00 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+            transform: scale(1.02);
+        }
+        
+        .chip-size.selected {
+            background-color: #735c00;
+            color: #ffffff;
+            border-color: #735c00;
+        }
+        
+        .color-swatch.selected {
+            outline: 2px solid #735c00;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen">
+<!-- Top Navigation (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/20 shadow-sm bg-surface/80 dark:bg-surface-dim/80">
+<div class="flex flex-row-reverse justify-between items-center px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors duration-300">shopping_cart</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors duration-300">account_circle</span>
+</div>
+<div class="hidden md:flex gap-8 flex-row-reverse">
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300" href="#">Heritage</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300" href="#">Collections</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300" href="#">Women</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300" href="#">Men</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300" href="#">New Arrivals</a>
+</div>
+<div class="font-display-lg text-display-lg text-primary uppercase tracking-tighter hidden md:block">
+                Smart Store
+            </div>
+<div class="font-display-lg-mobile text-display-lg-mobile text-primary uppercase tracking-tighter md:hidden">
+                Smart Store
+            </div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Breadcrumbs -->
+<div class="text-sm text-on-surface-variant mb-8 flex items-center gap-2 font-label-caps">
+<a class="hover:text-primary transition-colors" href="#">الرئيسية</a>
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+<a class="hover:text-primary transition-colors" href="#">المنتجات</a>
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+<a class="hover:text-primary transition-colors" href="#">رجالي</a>
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+<span class="text-on-surface">نايكي اير ماكس 2024</span>
+</div>
+<!-- Product Hero Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-16">
+<!-- Right Column: 3D Viewer & Thumbnails (60% -> 7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-6 order-1 lg:order-2">
+<!-- 3D Viewer Container -->
+<div class="relative w-full aspect-square bg-surface-container-lowest rounded-full overflow-hidden shadow-sm flex items-center justify-center border border-outline-variant/30">
+<!-- Animation Placeholder Embed -->
+
+<!-- Swipe Indicator -->
+<div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-surface/80 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-sm border border-outline-variant/20">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+<span class="text-xs font-label-caps tracking-wide">اسحب للتدوير</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Thumbnails -->
+<div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
+<button class="w-24 h-24 flex-shrink-0 bg-surface-container-lowest rounded-lg border-2 border-primary overflow-hidden">
+<img alt="Thumbnail 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UlZK1CAcahy5sICGlfFklkyaEBJ2KuSirVnZKgFhXk1H_InlK4DecOUQb_n3MCtliNR7BbwXOKtxWi2XK58Q8LvwM0asvdFGS5W-H2sNWt83mnaT9sMg9JzGEqUQ5IX9lvYnxTUPt_LBqmiikbXShgK5Hj6LKfXzcZYAC41N68BrAFpSiVfXr6wK3B0itsYirCY1i7h9EFHgY-BhVPomPTCAvwvU8Samd6aBF0MvjUzgF5deJryYdn4xsG"/>
+</button>
+<button class="w-24 h-24 flex-shrink-0 bg-surface-container-lowest rounded-lg border border-outline-variant/30 hover:border-primary/50 transition-colors overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A detailed macro shot of the premium leather texture and stitching on a high-end sneaker, brightly lit in a pristine modern setting with a subtle golden glow accentuating the craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm61Yvyu-LrVybfTCbic2XyIHkpGh4bq7RmvWvH2kwi866uuwz_YvlBbWu9dW5DBFbbIHKR_cNICw7MMLCt_En8wqcZ6GosOKnXrST4sYg-psxr9skTqMc80IBgN1fiHqCQKQDBkzdl8VgVQQ42UN-KsmpMBKqwhVSzIniGB_wIwGX4LCil29ZgVHNnRtz3nNbD0U5qj4tDhvf7iYTYUoUdtRhSSZ1zf40GjZeu0yWzD7Zdroe08JYLQ"/>
+</button>
+<button class="w-24 h-24 flex-shrink-0 bg-surface-container-lowest rounded-lg border border-outline-variant/30 hover:border-primary/50 transition-colors overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A sleek product shot showing the futuristic sole unit of a modern high-end sneaker from below, emphasizing the structural design and advanced cushioning technology against a stark white studio background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuQopBS_vMBitsUJFMs6eqYnT6CDfBmE3mXHS-pPclzgSv-9LIDz9wceKaZ0N91oOyt7zP09WQnjVqRcS0Oyef42qobwbK-Uret7gqGJ2_GTPRDSOj4O-FfpDtqOWHU-OrJMRO3kVv0MUb4OcIxYIKeaYcJv3EHYUToaByMo6GjHhF5IfWVgmYsXi3CNevz8MtK0yqwTkiCp7wGpgCLZwRI1sBhxLqCSvrlOpA5zBAizoOMuurW9bhVA"/>
+</button>
+<button class="w-24 h-24 flex-shrink-0 bg-surface-container-lowest rounded-lg border border-outline-variant/30 hover:border-primary/50 transition-colors overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="An elegant lifestyle shot of a high-fashion sneaker resting gracefully on a marble display plinth in a bright, airy luxury boutique, with soft daylight and subtle warm shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc7tSgYBHyrAXoIivTIzgdYn6L_RPgXS03hMA6WykProcBsdM17675oMsO1pTD7L044JAUZlZkHK45J25GeGuTNM8khzd1mtUOXiHLm181r2iC1cueX7v1C2sUGLBlP3X12OG7jQ5z077ay5mgkuJjWr10xJZJUl22xxN95n_pCI5GaZ02gJwlJ2raDUsO6-sA-sd7YbvkYpSiqr61HEPNPpe8PlKQH9MRMEr4rF4HOfLY1BaHpYrkIg"/>
+</button>
+</div>
+</div>
+<!-- Left Column: Product Info (40% -> 5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-6 order-2 lg:order-1 pt-4">
+<!-- Title & Rating -->
+<div>
+<h1 class="font-headline-md text-headline-md text-on-surface mb-2">نايكي اير ماكس 2024</h1>
+<div class="flex items-center gap-2 text-primary-container">
+<div class="flex">
+<span class="material-symbols-outlined icon-fill text-lg text-primary-container">star</span>
+<span class="material-symbols-outlined icon-fill text-lg text-primary-container">star</span>
+<span class="material-symbols-outlined icon-fill text-lg text-primary-container">star</span>
+<span class="material-symbols-outlined icon-fill text-lg text-primary-container">star</span>
+<span class="material-symbols-outlined icon-fill text-lg text-primary-container">star</span>
+</div>
+<span class="text-sm text-on-surface-variant font-body-md">(128 تقييم)</span>
+</div>
+</div>
+<!-- Price -->
+<div class="p-4 bg-surface-container-lowest border border-outline-variant/30 rounded-lg shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1 bg-primary h-full"></div>
+<div class="flex items-baseline gap-3 mb-1">
+<span class="font-headline-md text-headline-md text-primary">2,500 ج.م</span>
+<span class="text-on-surface-variant line-through text-sm">3,000 ج.م</span>
+<span class="bg-error-container text-on-error-container text-xs px-2 py-1 rounded font-bold">-17%</span>
+</div>
+<div class="text-sm flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">credit_card</span>
+<span>متاح بالتقسيط: 833 ج.م / شهر</span>
+</div>
+</div>
+<!-- Color Selection -->
+<div>
+<h3 class="font-label-caps text-on-surface mb-3">اللون: <span class="text-primary font-bold">أسود</span></h3>
+<div class="flex gap-3">
+<button aria-label="Black" class="w-10 h-10 rounded-full bg-black color-swatch selected shadow-sm"></button>
+<button aria-label="White" class="w-10 h-10 rounded-full bg-surface-white border border-outline-variant/50 color-swatch shadow-sm"></button>
+<button aria-label="Red" class="w-10 h-10 rounded-full bg-error color-swatch shadow-sm"></button>
+<button aria-label="Blue" class="w-10 h-10 rounded-full bg-royal-blue color-swatch shadow-sm"></button>
+</div>
+</div>
+<!-- Size Selection -->
+<div>
+<div class="flex justify-between items-center mb-3">
+<h3 class="font-label-caps text-on-surface">المقاس (EU)</h3>
+<a class="text-primary text-xs underline font-label-caps hover:text-surface-tint transition-colors" href="#">دليل المقاسات</a>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="py-2 border border-outline-variant/50 rounded chip-size text-center font-body-md hover:border-primary transition-colors">39</button>
+<button class="py-2 border border-outline-variant/50 rounded chip-size text-center font-body-md hover:border-primary transition-colors">40</button>
+<button class="py-2 border border-outline-variant/50 rounded chip-size text-center font-body-md hover:border-primary transition-colors">41</button>
+<button class="py-2 border border-outline-variant/50 rounded chip-size text-center font-body-md hover:border-primary transition-colors selected">42</button>
+<button class="py-2 border border-outline-variant/50 rounded chip-size text-center font-body-md hover:border-primary transition-colors">43</button>
+<button class="py-2 border border-outline-variant/50 rounded chip-size text-center font-body-md hover:border-primary transition-colors">44</button>
+<button class="py-2 border border-outline-variant/50 rounded chip-size text-center font-body-md hover:border-primary transition-colors">45</button>
+<button class="py-2 border border-outline-variant/50 rounded chip-size text-center font-body-md hover:border-primary transition-colors opacity-50 cursor-not-allowed">46</button>
+</div>
+</div>
+<!-- Quantity & Actions -->
+<div class="flex flex-col gap-4 mt-2">
+<div class="flex items-center gap-4">
+<div class="flex items-center border border-outline-variant/50 rounded-full h-12 bg-surface-container-lowest w-32 justify-between px-2">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="font-body-lg text-body-lg font-bold">1</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<span class="text-sm text-[#006591] flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+                            متوفر في المخزن
+                        </span>
+</div>
+<div class="flex gap-3 h-14">
+<button class="flex-1 btn-primary text-on-primary rounded-full font-bold text-lg flex items-center justify-center gap-2 shadow-md">
+<span class="material-symbols-outlined">shopping_bag</span>
+                            أضف إلى السلة
+                        </button>
+<button class="w-14 h-14 rounded-full border border-outline-variant/50 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="w-14 h-14 rounded-full border border-outline-variant/50 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined">compare_arrows</span>
+</button>
+<button class="w-14 h-14 rounded-full border border-outline-variant/50 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+<!-- Delivery Info -->
+<div class="mt-4 border-t border-outline-variant/20 pt-6 space-y-4">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-sm">local_shipping</span>
+</div>
+<div>
+<h4 class="font-bold text-sm text-on-surface">شحن مجاني</h4>
+<p class="text-xs text-on-surface-variant mt-1">للطلبات التي تزيد عن 500 ج.م. التوصيل إلى القاهرة (3-5 أيام).</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-sm">assignment_return</span>
+</div>
+<div>
+<h4 class="font-bold text-sm text-on-surface">إرجاع سهل</h4>
+<p class="text-xs text-on-surface-variant mt-1">يمكنك إرجاع المنتج خلال 14 يوم مجاناً.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tabs Section -->
+<div class="mt-20 border-b border-outline-variant/20">
+<div class="flex gap-8 overflow-x-auto pb-4 scrollbar-hide">
+<button class="font-headline-sm text-headline-sm text-primary border-b-2 border-primary pb-2 whitespace-nowrap">الوصف</button>
+<button class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-primary transition-colors pb-2 whitespace-nowrap">المميزات</button>
+<button class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-primary transition-colors pb-2 whitespace-nowrap">دليل المقاسات</button>
+<button class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-primary transition-colors pb-2 whitespace-nowrap">التقييمات (128)</button>
+</div>
+</div>
+<div class="py-8 grid grid-cols-1 md:grid-cols-2 gap-12 text-on-surface-variant font-body-lg text-body-lg">
+<div>
+<p class="mb-4">
+                    يجمع حذاء نايكي اير ماكس 2024 بين التصميم المستقبلي والراحة الاستثنائية. يتميز هذا الإصدار بتقنية الوسادة الهوائية المحدثة التي توفر دعماً لا مثيل له طوال اليوم.
+                </p>
+<p>
+                    مصمم خصيصاً ليناسب الإيقاع السريع للحياة العصرية، مع لمسات من الفخامة تجعله القطعة الأساسية في خزانة ملابسك الأنيقة.
+                </p>
+</div>
+<div>
+<ul class="space-y-3">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> <strong>الخامة:</strong> جلد طبيعي فاخر مع شبكة تهوية</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> <strong>النعل:</strong> مريح للغاية بفضل تقنية Air Max المتقدمة</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> <strong>الوزن:</strong> خفيف الوزن لحركة مرنة وسريعة</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">done</span> <strong>الاستخدام:</strong> مناسب للاستخدام اليومي والرياضة الخفيفة</li>
+</ul>
+</div>
+</div>
+<!-- Related Products Section -->
+<div class="mt-24 mb-12">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8 text-center md:text-right">منتجات مشابهة</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Product Card 1 -->
+<div class="product-card bg-surface-container-lowest rounded-xl p-4 flex flex-col items-center group cursor-pointer border border-surface-container">
+<div class="w-full aspect-square bg-surface-container-low rounded-lg mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sleek, all-black modern running sneaker with subtle gold accents, presented in a minimalist high-end e-commerce style against a pure white background with soft ambient shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzlFrFiuKc1wYPX7RhYsLRJrMgc1FofBslXPIS9OfXIFm9ntNMGR9YJY6PW94RP7TNgdmwZEx4kgp-R-0PhY-xmdoTJ2ZS0CVEq4qQNU9TsX8n526ot1PSa2g4duT4-6WJhBPh8f66YEX5b7tG7aZRbOBNzruZcKt-lFwJ1JjKrpKWmxtZ09xOsWeHVgX7b5HjoSff1ZoJFek7Wzz4tdbxvNf9hMLbdRelh1b5ABk0cQmlRns9I5zW_w"/>
+<button class="absolute top-2 right-2 w-8 h-8 bg-surface/80 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-center mb-1">حذاء ركض ألترا</h3>
+<p class="text-primary font-bold">1,800 ج.م</p>
+</div>
+<!-- Product Card 2 -->
+<div class="product-card bg-surface-container-lowest rounded-xl p-4 flex flex-col items-center group cursor-pointer border border-surface-container">
+<div class="w-full aspect-square bg-surface-container-low rounded-lg mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A pristine white luxury casual sneaker featuring a minimalist profile and a chunky sole, beautifully lit in a high-fashion studio setting to highlight its premium leather construction." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUaDuWFA4oF_2kIY4DG_WxZT4QQjHvlyXuCdkMhKGW3Hr8cjdvMFsBwYFlTxnxMHC_vz7_FSqm1eAzQuFQS2TICmEpGotFSEJR3QJ-F3Uh1et-UnnSaYGSjzB0e6JmWvAw1C8CkiIYofEVkUT0VB1C6xpqZHfCNheq6fIObiU7vbykj-BG-86yl-NLc0aKGznrkOMyJ7H0-6I20B-hXQLBKuyIxskFFSXi46BGODgH2_iNxaCK8WmeFA"/>
+<span class="absolute top-2 left-2 bg-error text-on-error text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">جديد</span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-center mb-1">سنيكرز كلاسيك وايت</h3>
+<p class="text-primary font-bold">2,200 ج.م</p>
+</div>
+<!-- Product Card 3 -->
+<div class="product-card bg-surface-container-lowest rounded-xl p-4 flex flex-col items-center group cursor-pointer border border-surface-container">
+<div class="w-full aspect-square bg-surface-container-low rounded-lg mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A bold, futuristic sneaker in deep navy blue with metallic silver details, showcased elegantly on a reflective white surface in a bright, modern luxury retail environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSBtTAvjuseD1jW1PnPSV3wkZ3nfzCoTcv5DnWcJQL8kUxx5X9S8ZPqZrB6625uu6wvBd5ZQIfbTmFcKXxfHAQw6Q9NtFSewFf7dXI6uKevOM3wnROqcFgTLbqwgaVwlxOiWJt3COWoMoKevOJIfzQqsV-pQL76n5-4YV-neOmmjSN8PNmf1SbO2JJevgM3-bh8IPeIntAVGTysHW0bbkn7EscD9cz6KD9zBp53bGKzpZPO74tj6TBjQ"/>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-center mb-1">برو ماكس أزرق</h3>
+<p class="text-primary font-bold">2,850 ج.م</p>
+</div>
+<!-- Product Card 4 -->
+<div class="product-card bg-surface-container-lowest rounded-xl p-4 flex flex-col items-center group cursor-pointer border border-surface-container">
+<div class="w-full aspect-square bg-surface-container-low rounded-lg mb-4 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A stylish high-top urban sneaker in a muted beige and sand colorway, elegantly photographed to emphasize the suede texture against a pristine, high-key white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy_j1s_4YZYFncrd1-htsYPP1LCqEp7pog2gADeAmMjiDIGT9j_TGXz-b5DB8P9FK1dS1Dthwy1vYVj-m7SUSHimldtsNh_s-5KxRSppujsBNy7YmPBLjJOPdMmqIunxLJl2t449c9I73bsP-tQeM1D7e56zlcM1Cl4jxBhiqgdvW1vyjx-r0w6GJMQi7jPPJZK1KZN41cJYbscjrYY4j5HMl4elKaQBKCknYJQG0bHrTku_0126uG1g"/>
+<span class="absolute top-2 left-2 bg-inverse-surface text-inverse-on-surface text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wider">-20%</span>
+</div>
+<h3 class="font-body-lg text-body-lg font-semibold text-center mb-1">هاي توب أوربان</h3>
+<div class="flex gap-2">
+<p class="text-primary font-bold">1,600 ج.م</p>
+<p class="text-on-surface-variant line-through text-sm">2,000 ج.م</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim w-full pt-16 pb-8 border-t border-surface-container-low dark:border-surface-container">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto text-right">
+<div class="col-span-1 md:col-span-1 mb-8 md:mb-0">
+<div class="font-display-lg-mobile text-display-lg-mobile text-primary mb-4">
+                    Smart Store
+                </div>
+<p class="text-on-surface-variant text-sm mb-4 max-w-xs">
+                    نقدم لك أرقى المنتجات بأعلى معايير الجودة، حيث تلتقي الأناقة العصرية بالفخامة الاستثنائية.
+                </p>
+</div>
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-bold text-on-surface mb-2 font-headline-sm">روابط هامة</h4>
+<a class="text-on-surface-variant hover:text-primary hover:underline transition-all cursor-pointer" href="#">About Us</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline transition-all cursor-pointer" href="#">Shipping &amp; Returns</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline transition-all cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline transition-all cursor-pointer" href="#">Contact Support</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline transition-all cursor-pointer" href="#">Store Locator</a>
+</div>
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-bold text-on-surface mb-2 font-headline-sm">الأقسام</h4>
+<a class="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">الرجال</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">النساء</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">التشكيلات</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">وصل حديثاً</a>
+</div>
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-bold text-on-surface mb-2 font-headline-sm">النشرة البريدية</h4>
+<p class="text-on-surface-variant text-sm mb-2">اشترك ليصلك كل جديد وعروض حصرية.</p>
+<div class="flex">
+<button class="bg-primary text-on-primary px-4 py-2 rounded-r-md font-bold hover:bg-surface-tint transition-colors">اشترك</button>
+<input class="border border-outline-variant rounded-l-md px-3 py-2 w-full focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" dir="rtl" placeholder="البريد الإلكتروني" type="email"/>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-6 border-t border-surface-container-low text-center px-margin-desktop">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Smart Store. Crafted with Egyptian Excellence.</p>
+</div>
+</footer>
+<script>
+        // Simple script to handle size selection toggle for visual feedback
+        document.querySelectorAll('.chip-size').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if(!this.classList.contains('cursor-not-allowed')) {
+                    document.querySelectorAll('.chip-size').forEach(b => b.classList.remove('selected'));
+                    this.classList.add('selected');
+                }
+            });
+        });
+
+        // Simple script for color selection
+        document.querySelectorAll('.color-swatch').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.color-swatch').forEach(b => b.classList.remove('selected'));
+                this.classList.add('selected');
+                
+                // Update text label based on aria-label
+                const colorLabel = this.getAttribute('aria-label');
+                const arabicColors = {
+                    'Black': 'أسود',
+                    'White': 'أبيض',
+                    'Red': 'أحمر',
+                    'Blue': 'أزرق'
+                };
+                
+                const labelElement = document.querySelector('h3.font-label-caps span.text-primary');
+                if(labelElement && arabicColors[colorLabel]) {
+                    labelElement.textContent = arabicColors[colorLabel];
+                }
+            });
+        });
+    </script>
+</body></html>

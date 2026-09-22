@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smart Store - Contact &amp; Tracking</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-highest": "#e5e2e1",
+                      "on-primary-fixed": "#241a00",
+                      "secondary-fixed-dim": "#89ceff",
+                      "surface-tint": "#735c00",
+                      "primary": "#735c00",
+                      "surface-variant": "#e5e2e1",
+                      "on-background": "#1c1b1b",
+                      "error": "#ba1a1a",
+                      "surface-container-high": "#eae7e7",
+                      "outline": "#7f7663",
+                      "primary-fixed-dim": "#e9c349",
+                      "secondary": "#006591",
+                      "on-surface-variant": "#4d4635",
+                      "surface-bright": "#fcf9f8",
+                      "primary-fixed": "#ffe088",
+                      "outline-variant": "#d0c5af",
+                      "on-secondary-container": "#004666",
+                      "surface-container": "#f0eded",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-on-surface": "#f3f0ef",
+                      "tertiary-fixed-dim": "#fbabff",
+                      "tertiary": "#a200ba",
+                      "inverse-surface": "#313030",
+                      "on-secondary-fixed-variant": "#004c6e",
+                      "gold-glow": "rgba(212, 175, 55, 0.4)",
+                      "on-primary-container": "#554300",
+                      "on-secondary": "#ffffff",
+                      "surface": "#fcf9f8",
+                      "on-primary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed": "#ffd6fd",
+                      "surface-white": "#FFFFFF",
+                      "on-primary-fixed-variant": "#574500",
+                      "tertiary-container": "#f58bff",
+                      "inverse-primary": "#e9c349",
+                      "on-tertiary-fixed": "#36003e",
+                      "on-error": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "royal-blue": "#18509F",
+                      "surface-container-low": "#f6f3f2",
+                      "on-tertiary-fixed-variant": "#7c008e",
+                      "secondary-container": "#39b8fd",
+                      "primary-container": "#d4af37",
+                      "surface-dim": "#dcd9d9",
+                      "on-secondary-fixed": "#001e2f",
+                      "on-tertiary-container": "#79008b",
+                      "background": "#fcf9f8",
+                      "on-surface": "#1c1b1b",
+                      "secondary-fixed": "#c9e6ff",
+                      "on-tertiary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "unit": "4px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "display-lg-mobile": [
+                              "Bodoni Moda"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-caps": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-sm": [
+                              "Bodoni Moda"
+                      ],
+                      "headline-md": [
+                              "Bodoni Moda"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg": [
+                              "Bodoni Moda"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+        .luxury-shadow {
+            box-shadow: 0 10px 40px -10px rgba(115, 92, 0, 0.1);
+        }
+        .luxury-shadow-hover:hover {
+            box-shadow: 0 20px 50px -15px rgba(115, 92, 0, 0.15);
+            transform: translateY(-4px);
+        }
+        .input-glow:focus {
+            box-shadow: 0 0 0 2px rgba(115, 92, 0, 0.2);
+            border-color: #735c00;
+        }
+        .gradient-text {
+            background: linear-gradient(to left, #735c00, #b59828);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-24">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-xl border-b border-outline-variant/20 dark:border-outline/10 shadow-sm">
+<div class="flex flex-row-reverse justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
+<!-- Brand -->
+<div class="font-display-lg-mobile md:font-display-lg text-headline-sm md:text-headline-md tracking-tighter text-on-surface dark:text-surface-bright">
+                SMART STORE
+            </div>
+<!-- Nav Links (Desktop) -->
+<div class="hidden md:flex flex-row-reverse items-center gap-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">الرئيسية</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">تسوق</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">الأكثر مبيعاً</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-300 font-body-md text-body-md" href="#">مجموعاتنا</a>
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">تتبع الطلب / اتصل بنا</a>
+</div>
+<!-- Icons -->
+<div class="flex flex-row-reverse items-center gap-4">
+<button aria-label="Favorite" class="scale-95 transition-transform hover:text-primary dark:hover:text-primary-fixed-dim text-on-surface">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<button aria-label="Profile" class="scale-95 transition-transform hover:text-primary dark:hover:text-primary-fixed-dim text-on-surface">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+<button aria-label="Cart" class="scale-95 transition-transform hover:text-primary dark:hover:text-primary-fixed-dim text-on-surface">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button aria-label="Menu" class="md:hidden scale-95 transition-transform hover:text-primary text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 flex flex-col gap-24">
+<!-- Header Section -->
+<header class="text-center space-y-4 max-w-3xl mx-auto">
+<h1 class="font-display-lg-mobile md:font-display-lg text-headline-md md:text-display-lg text-primary gradient-text">تواصل معنا وتتبع طلباتك</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">نحن هنا لخدمتك. استعلم عن حالة طلبك أو تواصل مع فريق خدمة العملاء لأي استفسارات أخرى.</p>
+</header>
+<!-- Tracking & Contact Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Tracking Section (Left/Top) -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<div class="bg-surface-container-lowest rounded-full p-8 luxury-shadow border border-outline-variant/30 flex-grow flex flex-col justify-center">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">تتبع طلبك</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">أدخل رقم الطلب والبريد الإلكتروني لمعرفة حالة شحنتك الحالية.</p>
+<form class="space-y-6">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2" for="order-number">رقم الطلب</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/50 rounded-lg px-4 py-3 font-body-md text-body-md focus:outline-none input-glow transition-all" id="order-number" placeholder="مثال: ORD-12345" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2" for="tracking-email">البريد الإلكتروني أو رقم الهاتف</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/50 rounded-lg px-4 py-3 font-body-md text-body-md focus:outline-none input-glow transition-all" id="tracking-email" placeholder="أدخل بياناتك هنا" type="text"/>
+</div>
+<button class="w-full bg-primary text-on-primary font-body-md text-body-md py-4 rounded-full shadow-[0_4px_14px_0_rgba(115,92,0,0.39)] hover:shadow-[0_6px_20px_rgba(115,92,0,0.23)] hover:bg-surface-tint transition-all duration-300 flex justify-center items-center gap-2" type="button">
+<span>تتبع الآن</span>
+<span class="material-symbols-outlined text-[20px]" data-icon="arrow_left_alt">arrow_left_alt</span>
+</button>
+</form>
+</div>
+</div>
+<!-- Contact Form Section (Right/Bottom) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-full p-8 md:p-12 luxury-shadow border border-outline-variant/30">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">أرسل لنا رسالة</h2>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="md:col-span-1">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2" for="first-name">الاسم الأول</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/50 rounded-lg px-4 py-3 font-body-md text-body-md focus:outline-none input-glow transition-all" id="first-name" type="text"/>
+</div>
+<div class="md:col-span-1">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2" for="last-name">اسم العائلة</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/50 rounded-lg px-4 py-3 font-body-md text-body-md focus:outline-none input-glow transition-all" id="last-name" type="text"/>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2" for="contact-email">البريد الإلكتروني</label>
+<input class="w-full bg-surface-container-low border border-outline-variant/50 rounded-lg px-4 py-3 font-body-md text-body-md focus:outline-none input-glow transition-all" dir="ltr" id="contact-email" type="email"/>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2" for="subject">الموضوع</label>
+<select class="w-full bg-surface-container-low border border-outline-variant/50 rounded-lg px-4 py-3 font-body-md text-body-md focus:outline-none input-glow transition-all appearance-none cursor-pointer" id="subject">
+<option value="">اختر موضوع الاستفسار</option>
+<option value="order">استفسار عن طلب</option>
+<option value="product">استفسار عن منتج</option>
+<option value="complaint">شكوى أو اقتراح</option>
+<option value="other">أخرى</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2" for="message">الرسالة</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant/50 rounded-lg px-4 py-3 font-body-md text-body-md focus:outline-none input-glow transition-all resize-none" id="message" rows="4"></textarea>
+</div>
+<div class="md:col-span-2 mt-2">
+<button class="bg-primary text-on-primary font-body-md text-body-md px-8 py-4 rounded-full shadow-[0_4px_14px_0_rgba(115,92,0,0.39)] hover:shadow-[0_6px_20px_rgba(115,92,0,0.23)] hover:bg-surface-tint transition-all duration-300 w-full md:w-auto" type="button">
+                            إرسال الرسالة
+                        </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Contact Info & Map Section -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Info Cards -->
+<div class="lg:col-span-1 flex flex-col gap-6">
+<!-- Call Us -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 flex items-start gap-4 transition-all duration-300 hover:border-primary/50 luxury-shadow-hover">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-[20px] text-on-surface mb-1">اتصل بنا</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">من الأحد إلى الخميس، 9 ص - 6 م</p>
+<p class="font-body-lg text-body-lg text-primary font-semibold" dir="ltr">+20 123 456 7890</p>
+</div>
+</div>
+<!-- Email -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 flex items-start gap-4 transition-all duration-300 hover:border-primary/50 luxury-shadow-hover">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-[20px] text-on-surface mb-1">راسلنا</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">فريقنا سيرد عليك في أقرب وقت</p>
+<p class="font-body-lg text-body-lg text-primary font-semibold" dir="ltr">support@smartstore.eg</p>
+</div>
+</div>
+<!-- Address -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30 flex items-start gap-4 transition-all duration-300 hover:border-primary/50 luxury-shadow-hover">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-[20px] text-on-surface mb-1">المقر الرئيسي</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">الزمالك، القاهرة<br/>جمهورية مصر العربية</p>
+</div>
+</div>
+</div>
+<!-- Map -->
+<div class="lg:col-span-2 rounded-full overflow-hidden border border-outline-variant/30 h-[400px] lg:h-auto relative luxury-shadow">
+<div class="absolute inset-0 bg-surface-container-high animate-pulse"></div>
+<!-- Placeholder for map. Using image placeholder as requested, with data-location -->
+<img alt="Map Location" class="w-full h-full object-cover relative z-10 opacity-90 hover:opacity-100 transition-opacity duration-500" data-alt="A stylized, premium-looking high-resolution map view centered on a luxury district in Cairo, Egypt. The map features a soft, light-mode color palette with subtle gold and deep blue accents to match a boutique brand identity. Streets are clean lines, and parks are muted beige-green. The aesthetic is modern, high-contrast minimal, and sophisticated." data-location="Cairo, Egypt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLKmmbn7RJXSO_hlCYf9XcBX9bGcWalrzLP3lpKl-gUPjCr5YE6PvuawmxR2oPuhVR0dvsubDbptE31mClgNoxgFnm-35QXlAS5RzR9OktatsP9ZnX1HxyQ3fHUW5I1uFiSj8G7tB4nn-zR16NcHsxAKbJ4etFstKYy0VOc8Kzr-T0kQbyqVLhwFeH0p2b8lx7bbeB1J7nw99293-yEcQiBXjZ7ljJQaQf27WQ2RIPSOeg4LNDjQq3Zw"/>
+<!-- Overlay for aesthetic -->
+<div class="absolute inset-0 bg-gradient-to-t from-white/40 to-transparent z-20 pointer-events-none"></div>
+<div class="absolute bottom-6 left-6 right-6 glass-panel p-4 rounded-xl z-30 flex justify-between items-center max-w-sm ml-auto mr-auto lg:mr-6 lg:ml-0">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="storefront">storefront</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">معرض سمارت ستور</span>
+</div>
+<button class="text-xs font-label-caps text-primary hover:text-surface-tint underline underline-offset-4">احصل على الاتجاهات</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface w-full pt-16 pb-8 border-t border-outline-variant dark:border-outline/20 mt-12">
+<div class="flex flex-col md:flex-row-reverse justify-between gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col gap-4 mb-8 md:mb-0">
+<div class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed-dim">
+                    SMART STORE
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    وجهتك الأولى للتسوق الراقي والمتميز في مصر.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row-reverse gap-8 md:gap-16">
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">عن المتجر</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">الأسئلة الشائعة</a>
+<a class="font-body-md text-body-md text-primary font-bold opacity-80 hover:opacity-100" href="#">تتبع الطلب</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">اتصل بنا</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">الشروط والأحكام</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">سياسة الخصوصية</a>
+</div>
+</div>
+</div>
+<div class="mt-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center md:text-right font-body-md text-body-md text-on-surface-variant opacity-70 border-t border-outline-variant/30 pt-6">
+            © 2024 سمارت ستور. جميع الحقوق محفوظة. صنع في مصر.
+        </div>
+</footer>
+</body></html>
