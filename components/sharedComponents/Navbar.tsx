@@ -1,2 +1,2 @@
-SHARED COMPONENT (only if reused):
-use shadcn/ui Button, Sheet, etc.
+import { Button } from '@\/components\/ui\/button';
+export default function Navbar() { return <nav><Button>Menu</Button></nav>; }

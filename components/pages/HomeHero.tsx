@@ -1,3 +1,2 @@
-PAGE-SPECIFIC (separate):
 import { Button } from '@/components/ui/button';
-// Only for home page — not shared
+export default function HomeHero() { return <section><h1>Smart Store</h1></section>; }
